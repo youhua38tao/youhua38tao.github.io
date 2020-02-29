@@ -1,0 +1,1161 @@
+<!DOCTYPE html>
+<html>
+<head hexo-theme='Volantis' version='1.6.2' docs='https://volantis.js.org/'>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  <title>软件工程复习（预习）4 | DarkCrane</title>
+  
+  
+
+  
+  <link rel="alternate" href="/atom.xml" title="DarkCrane">
+  
+
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <!-- meta -->
+  
+
+  <!-- link -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.12.1/css/all.min.css">
+  
+    
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
+
+  
+  
+    
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/node-waves@0.7.6/dist/waves.min.css">
+
+  
+
+  
+
+  
+  <link rel="shortcut icon" type='image/x-icon' href="https://s2.ax1x.com/2020/02/11/1ovFOA.png">
+  
+
+  
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1.10/dist/APlayer.min.css">
+  
+
+  
+    
+<link rel="stylesheet" href="/style.css">
+
+  
+
+  <script>
+    function setLoadingBarProgress(num) {
+      document.getElementById('loading-bar').style.width=num+"%";
+    }
+  </script>
+
+  
+  
+</head>
+
+<body>
+  
+  <div class="cover-wrapper">
+    <cover class='cover post half'>
+      
+        
+  <p class="title white">DarkCrane</p>
+  
+    <p class="subtitle white">A Performance Artist</p>
+  
+
+
+  <div class="m_search">
+    <form name="searchform" class="form u-search-form">
+      <i class="icon fas fa-search fa-fw"></i>
+      <input type="text" class="input u-search-input" placeholder="请用力点我" />
+    </form>
+  </div>
+
+<div class='menu navigation'>
+  <ul class='h-list'>
+    
+      
+        <li>
+          <a class="nav home white"
+            href="/"
+            
+            
+            id="home">
+            <i class='fas fa-bullhorn fa-fw'></i>&nbsp;公告
+          </a>
+        </li>
+      
+        <li>
+          <a class="nav home white"
+            href="/categories/"
+            
+            
+            id="categories">
+            <i class='fas fa-book fa-fw'></i>&nbsp;分类
+          </a>
+        </li>
+      
+        <li>
+          <a class="nav home white"
+            href="/tags/"
+            
+            
+            id="tags">
+            <i class='fas fa-tags fa-fw'></i>&nbsp;标签
+          </a>
+        </li>
+      
+        <li>
+          <a class="nav home white"
+            href="/archives/"
+            
+            
+            id="archives">
+            <i class='fas fa-archive fa-fw'></i>&nbsp;归档
+          </a>
+        </li>
+      
+        <li>
+          <a class="nav home white"
+            href="/friend/"
+            
+            
+            id="friend">
+            <i class='fas fa-user-friends fa-fw'></i>&nbsp;友链
+          </a>
+        </li>
+      
+        <li>
+          <a class="nav home white"
+            href="https://www.darkcrane.com"
+            
+            
+              target="_blank"
+            
+            id="https:www.darkcrane.com">
+            <i class='fas fa-blog fa-fw'></i>&nbsp;网站
+          </a>
+        </li>
+      
+    
+  </ul>
+</div>
+
+      
+    </cover>
+    <header class="l_header nav-blur">
+  <div id="loading-bar-wrapper">
+    <div id="loading-bar"></div>
+  </div>
+
+	<div class='wrapper'>
+		<div class="nav-main container container--flex">
+      <a class="logo flat-box" target="_self" href='/' >
+        
+          
+          
+            DarkCrane
+          
+        
+      </a>
+			<div class='menu navigation'>
+				<ul class='h-list'>
+          
+  					
+  						<li>
+								<a class="nav flat-box" href="/"
+                  
+                  
+                  id="home">
+									<i class='fas fa-bullhorn fa-fw'></i>&nbsp;公告
+								</a>
+							</li>
+      			
+  						<li>
+								<a class="nav flat-box" href="/categories"
+                  
+                  
+                  id="categories">
+									<i class='fas fa-book fa-fw'></i>&nbsp;分类
+								</a>
+							</li>
+      			
+  						<li>
+								<a class="nav flat-box" href="/tags"
+                  
+                  
+                  id="tags">
+									<i class='fas fa-tags fa-fw'></i>&nbsp;标签
+								</a>
+							</li>
+      			
+  						<li>
+								<a class="nav flat-box" href="/archives"
+                  
+                  
+                  id="archives">
+									<i class='fas fa-archive fa-fw'></i>&nbsp;归档
+								</a>
+							</li>
+      			
+  						<li>
+								<a class="nav flat-box" href="/friend"
+                  
+                  
+                  id="friend">
+									<i class='fas fa-user-friends fa-fw'></i>&nbsp;友链
+								</a>
+							</li>
+      			
+  						<li>
+								<a class="nav flat-box" href="https://www.darkcrane.com"
+                  
+                  
+                    target="_blank"
+                  
+                  id="https:www.darkcrane.com">
+									<i class='fas fa-blog fa-fw'></i>&nbsp;网站
+								</a>
+							</li>
+      			
+      		
+				</ul>
+			</div>
+
+      <div class="m_search">
+        <form name="searchform" class="form u-search-form">
+          <i class="icon fas fa-search fa-fw"></i>
+          <input type="text" class="input u-search-input" placeholder="请用力点我" />
+        </form>
+      </div>
+
+			<ul class='switcher h-list'>
+				
+					<li class='s-search'><a class="fas fa-search fa-fw" target="_self" href='javascript:void(0)'></a></li>
+				
+				<li class='s-menu'><a class="fas fa-bars fa-fw" target="_self" href='javascript:void(0)'></a></li>
+			</ul>
+		</div>
+
+		<div class='nav-sub container container--flex'>
+			<a class="logo flat-box"></a>
+			<ul class='switcher h-list'>
+				<li class='s-comment'><a class="flat-btn fas fa-comments fa-fw" target="_self" href='javascript:void(0)'></a></li>
+        
+          <li class='s-toc'><a class="flat-btn fas fa-list fa-fw" target="_self" href='javascript:void(0)'></a></li>
+        
+			</ul>
+		</div>
+	</div>
+</header>
+	<aside class="menu-phone white-box">
+    <header>
+		<nav class="menu navigation">
+      <ul>
+        
+          
+            <li>
+							<a class="nav flat-box" href="/"
+                
+                
+                id="home">
+								<i class='fas fa-bullhorn fa-fw'></i>&nbsp;公告
+							</a>
+            </li>
+          
+            <li>
+							<a class="nav flat-box" href="/categories"
+                
+                
+                id="categories">
+								<i class='fas fa-book fa-fw'></i>&nbsp;分类
+							</a>
+            </li>
+          
+            <li>
+							<a class="nav flat-box" href="/tags"
+                
+                
+                id="tags">
+								<i class='fas fa-tags fa-fw'></i>&nbsp;标签
+							</a>
+            </li>
+          
+            <li>
+							<a class="nav flat-box" href="/archives/"
+                
+                
+                id="archives">
+								<i class='fas fa-archive fa-fw'></i>&nbsp;归档
+							</a>
+            </li>
+          
+            <li>
+							<a class="nav flat-box" href="/friend"
+                
+                
+                id="friend">
+								<i class='fas fa-user-friends fa-fw'></i>&nbsp;友链
+							</a>
+            </li>
+          
+            <li>
+							<a class="nav flat-box" href="https://www.darkcrane.com"
+                
+                
+                  target="_blank"
+                
+                id="https:www.darkcrane.com">
+								<i class='fas fa-blog fa-fw'></i>&nbsp;网站
+							</a>
+            </li>
+          
+       
+      </ul>
+		</nav>
+    </header>
+	</aside>
+<script>setLoadingBarProgress(40);</script>
+
+  </div>
+
+
+  <div class="l_body">
+    <div class='body-wrapper'>
+      
+
+<div class='l_main'>
+  
+
+  
+    <article id="post" class="post white-box card-shadow body-blur article-type-post" itemscope itemprop="blogPost">
+      
+
+
+  <section class='meta'>
+    
+    
+    <div class="meta" id="header-meta">
+      
+        
+  
+    <h1 class="title">
+      <a href="/posts/9ac1b15a/">
+        软件工程复习（预习）4
+      </a>
+    </h1>
+  
+
+
+      
+      <div class='new-meta-box'>
+        
+          
+        
+          
+            
+<div class='new-meta-item author'>
+  <a href="https://blog.darkcrane.com" rel="nofollow">
+    <img src="https://pic.downk.cc/item/5e58b1d16127cc07131e532f.jpg">
+    <p>THL</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+  
+  <div class='new-meta-item category'>
+    <a href='/categories/%E5%A4%8D%E4%B9%A0%EF%BC%88%E9%A2%84%E4%B9%A0%EF%BC%89%E8%B5%84%E6%96%99/' rel="nofollow">
+      <i class="fas fa-folder-open" aria-hidden="true"></i>
+      <p>复习（预习）资料</p>
+    </a>
+  </div>
+
+
+          
+        
+          
+            <div class="new-meta-item date">
+  <a class='notlink'>
+    <i class="fas fa-edit" aria-hidden="true"></i>
+    <p>发布于：2020年2月29日</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+
+          
+        
+          
+            
+  
+    <div class="new-meta-item browse busuanzi">
+      <a class='notlink'>
+        <i class="fas fa-eye" aria-hidden="true"></i>
+        <p>
+          <span id="busuanzi_value_page_pv">
+            <i class="fas fa-spinner fa-spin fa-fw" aria-hidden="true"></i>
+          </span>
+        </p>
+      </a>
+    </div>
+  
+
+
+          
+        
+          
+            
+
+          
+        
+      </div>
+      
+        <hr>
+      
+    </div>
+  </section>
+
+
+      <section class="article typo">
+        <div class="article-entry" itemprop="articleBody">
+          
+          <p>Q1. 软件的发展经历了（     ）个发展阶段。（单选，1分）<br>一<br>二<br>三<br><strong>四</strong></p>
+<a id="more"></a>
+
+<p>Q2. 对象实现了数据和操作的结合，使数据和操作（      ）于对象的统一体中。（单选，1分）<br>结合<br>隐藏<br><strong>封装</strong><br>抽象</p>
+<p>Q3. 项目经理的职责不包括以下哪项内容(      )。（单选，1分）<br>开发计划<br>组织实施<br>项目控制<br><strong>系统支持</strong></p>
+<p>Q4. 下列模型属于成本估算方法的有（    ）（单选，1分）<br><strong>COCOMO模型</strong><br>McCall模型<br>McCabe度量法<br>时间估算法</p>
+<p>Q5. 白盒测试方法重视（           ）的度量。 （单选，1分）<br><strong>测试覆盖率</strong><br>测试数据多少<br>测试费用<br>测试周期 </p>
+<p>Q6. 下列不属于可行性研究任务的是（     ）。（单选，1分）<br>技术可行性，经济可行性<br>操作可行性，法律与社会可行性<br>经济可行性，人性化可行性<br><strong>国籍可行性，年龄可行性</strong></p>
+<p>Q7. 下列描述模型中既可用于结构化技术也可用于面向对象技术的模型是（     ）。（单选，1分）<br><strong>实体联系图、数据流图</strong><br>用例图、数据流图<br>状态图、顺序图<br>对象图、类图</p>
+<p>Q8. 可行性研究要进行一次（     ）需求分析。　　　（单选，1分）<br>详细的　<br>全面的<br><strong>简化的、压缩的</strong>　<br>彻底的</p>
+<p>Q9. 每个对象可用它自己的一组属性和它可以执行的一组（           ）来表征。 （单选，1分）<br>行为<br>功能<br><strong>操作</strong><br>数据</p>
+<p>Q10. 下列属于白盒测试的是（     ）。<br>①等价类划分法     ②边界值分析法    ③  错误推测法<br>④逻辑覆盖法       ⑤控制结构测试（单选，1分）<br>①②④⑤<br>②③④⑤<br>①②③⑤<br><strong>④⑤</strong></p>
+<p>Q11. 需求分析的任务不包括（     ）。（单选，1分）<br>问题分析<br><strong>系统设计</strong><br>需求描述<br>需求评审。</p>
+<p>Q12. 软件产品的开发主要是（           ）。 （单选，1分）<br>复制<br>再生产<br>拷贝<br><strong>研制</strong> </p>
+<p>Q13. 一个只有顺序结构的程序，其圈复杂度是（     ）。（单选，1分）<br>0<br><strong>1</strong><br>3<br>不确定的</p>
+<p>Q14. 下列不属于软件项目人员的组织形式的是（     ）。（单选，1分）<br>主程序员制小组<br>民主制小组<br>层次式小组<br><strong>协作式小组</strong></p>
+<p>Q15. 信息系统开发的结构化方法的一个主要原则是(      ) 。（单选，1分）<br><strong>自顶向下原则</strong><br>自底向上原则<br>分步实施原则<br>重点突破原则</p>
+<p>Q16. 下列不属于项目进度安排主要方法的是(     )（单选，1分）<br>工程网络图<br>Gantt图<br><strong>进度结构图</strong><br>任务资源表</p>
+<p>Q17. 面向对象方法学的出发点和基本原则是尽可能模拟人类习惯的思维方式，分析、设计和实现一个软件系统的方法和过程，尽可能接近于人类认识世界解决问题的方法和过程。因此面向对象方法有许多特征，如软件系统是由对象组成的；（     ）；对象彼此之间仅能通过传递消息互相联系；层次结构的继承。（单选，1分）<br>开发过程基于功能分析和功能分解<br>强调需求分析重要性<br><strong>把对象划分成类，每个对象类都定义一组数据和方法</strong><br>对既存类进行调整</p>
+<p>Q18. 当模块中包含复杂的条件组合，只有（     ）能够清晰地表达出各种动作之间的对应关系。（单选，1分）<br><strong>判定表和判定树</strong><br>盒图<br>流程图<br>关系图</p>
+<p>Q19. 下列属于应用软件的是（           ）。 （单选，1分）<br>计算机辅助教学软件<br><strong>软件测试工具</strong><br>办公自动化软件<br>工程与科学计算软件</p>
+<p>Q20. 软件工程管理是对软件项目的开发管理，即对整个软件的（    ）活动的管理。（单选，1分）<br>软件项目<br>生存期<br>软件开发计划<br><strong>软件开发</strong></p>
+<p>Q21. 模块中所有成分结合起来完成一项任务，该模块的内聚性是（     ）。（单选，1分）<br><strong>功能内聚</strong><br>通信内聚<br>顺序内聚<br>逻辑内聚</p>
+<p>Q22. 软件开发成本估算方法有（     ）。<br>① 代码行技术       ② 任务分解技术    ③ 专家估算法<br>④ 类推估算法       ⑤ 参数方程法      ⑥ 标准值法（单选，1分）<br>①③④⑤⑥<br>①②④⑤⑥<br>①②③④⑤<br><strong>①②③④⑤⑥</strong></p>
+<p>Q23. 软件测试时，正确的测试次序是（     ）。（单选，1分）<br><strong>单元测试，集成测试，确认测试</strong><br>单元测试，确认测试，集成测试<br>集成测试，单元测试，确认测试<br>确认测试，单元测试，集成测试</p>
+<p>Q24. 下面关于文档的叙述（     ）。（单选，1分）<br><strong>A．文档是仅用于说明使用软件的操作命令，不包括软件设计和实现细节</strong><br>B．文档是软件产品的一部分，没有文档的软件就不成为软件<br>C．高质量文档对于转让、变更、修改、扩充和使用有重要的意义<br>D．软件文档的编制在软件开发工作中占有突出的地位和相当大的工作量</p>
+<p>Q25. 软件开发环境按解决的问题分类包含（    ）（单选，1分）<br><strong>程序设计环境</strong><br>工具箱环境<br>基于方法的环境<br>以语言为中心的环境</p>
+<p>Q26. 用于描述对象模型的工具是（  ）（单选，1分）<br>数据流图<br>结构图<br>状态图<br><strong>对象图</strong></p>
+<p>Q27. 在软件测试中，首先对每个模块分别进行单元测试，然后再把所有的模块按设计要求装在一起测试，称为（　　　）（单选，1分）<br>确认测试<br>系统测试<br>渐增式测试<br><strong>非渐增式测试</strong></p>
+<p>Q28. 不适于作为数据流图处理（加工）框名称的是（     ）。（单选，1分）<br>人工校核工资数据<br><strong>工资支票数据</strong><br>打印工资支票<br>计算职工工资</p>
+<p>Q29. 下列（     ）属于压力测试。（单选，1分）<br>通过测试系统的恢复能力，检测其数据恢复、重新启动等是否正常<br>检测系统是否达到性能要求指标<br><strong>设计测试用例，使系统处于异常数量、异常频率、异常条件下，检测系统的承受能力</strong><br>检测系统安全保密的漏洞</p>
+<p>Q30. 维护中，因误删除一个标识符而引起的错误是（     ）副作用。（单选，1分）<br>文档<br>数据<br><strong>编码</strong><br>设计</p>
+<p>Q31. 任何项目都必须精心做好项目管理工作，最常用的计划管理工具是（           ）。  （单选，1分）<br>数据流程图<br>程序结构图<br>因果图<br><strong>PERT 图</strong></p>
+<p>Q32. 软件部件的内部实现与外部可访问性的分离,是指软件的（           ）。  （单选，1分）<br>继承性<br>共享性<br><strong>封装性</strong><br>抽象性 </p>
+<p>Q33. 一般子系统的划分是在系统（       ）阶段，根据对系统的功能、数据分析的结果提出的。（单选，1分）<br><strong>需求分析</strong><br>逻辑阶段<br>总体设计<br>详细设计</p>
+<p>Q34. 程序的三种基本控制结构的共同特点是（     ）。（单选，1分）<br>不能嵌套使用<br>只能用来写简单程序<br>已经用硬件实现<br><strong>只有一个入口和一个出口</strong></p>
+<p>Q35. 一个软件的宽度是指其控制的（     ）。（单选，1分）<br>模块数<br>层数<br><strong>跨度</strong><br>厚度</p>
+<p>Q36. 以下哪一项不是软件危机的表现（　　　）。（单选，1分）<br>开发的软件可维护性差<br>经费预算经常被突破<br><strong>软件极易被盗版</strong><br>开发的软件不能满足用户需求</p>
+<p>Q37. 对于使用原型的建议，下面说法错误的是（      ）。（单选，1分）<br>开发周期很长的项目，可通过原型开发来缩短开发周期<br>系统的使用可能变化较大，不能相对稳定，而原型模型具有适应变化的机制<br><strong>缺乏开发工具，或对原型的可用工具不了解的时候宜使用原型</strong><br>用户对系统的需求较为模糊，对某种要求缺乏信心时宜使用原型</p>
+<p>Q38. 以下哪个软件生存周期模型是一种风险驱动的模型（单选，1分）<br>瀑布模型<br>增量模型<br><strong>螺旋模型</strong><br>喷泉模型</p>
+<p>Q39. 在软件系统中，一个模块应该具有什么样的功能，这是由（  ）决定的。（单选，1分）<br>需求分析<br><strong>概要设计</strong><br>详细设计<br>程序设计</p>
+<p>Q40. 面向对象程序设计中，基于父类创建的子类具有父类的特性（属性和方法），这一特点称为类的（     ）。（单选，1分）<br>多态性<br>封装性<br><strong>继承性</strong><br>重用性</p>
+<p>Q41. 风险的三个属性是(        )  。 （单选，1分）<br>风险发生的时间、地点、负责人<br>风险事件、时间、影响<br><strong>风险事件、概率、影响</strong><br>风险数量、风险影响</p>
+<p>Q42. 为了提高软件产品的质量和可靠性，对某些无法避开的差错，使其影响减至最小程度所采用的技术是（     ）。（单选，1分）<br><strong>容错技术</strong><br>避开错误技术<br>检测技术<br>排错技术</p>
+<p>Q43. 在结构化分析方法中用状态―迁移图表达系统或对象的行为。在状态―迁移图中，由一个状态和一个事件所决定的下一状态可能会有(      )个。（单选，1分）<br>1<br>2<br><strong>多个</strong><br>不确定</p>
+<p>Q44. 从事物的属性侧面来描述事物的方法就是（     ）的方法。（单选，1分）<br>面向对象<br><strong>面向数据</strong><br>面向过程<br>面向属性</p>
+<p>Q45. 面向对象分析的首要工作是建立（     ）。（单选，1分）<br>系统的功能模型<br>系统的动态模型<br>软件对象类定义<br><strong>系统的对象模型</strong></p>
+<p>Q46. 在结构化分析方法中，用以表达系统内数据的运动情况的工具有(    )。（单选，1分）<br><strong>数据流图</strong><br>数据词典<br>结构化英语<br>判定表与判定树</p>
+<p>Q47. 软件工程方法的提出起源于软件危机，其主要思想是按（  ）来组织和规范软件开发过程。（单选，1分）<br>质量保证<br>生产危机<br><strong>工程化的原则和方法</strong><br>开发效率</p>
+<p>Q48. 软件重用的单位是（           ）。（单选，1分）<br><strong>软件模块</strong><br>性能<br>过程<br>功能</p>
+<p>Q49. 检查软件产品是否符合需求定义的过程称为（     ）。（单选，1分）<br><strong>确认测试</strong><br>集成测试<br>单元测试<br>系统测试</p>
+<p>Q50. 用于描绘软件项目的任务进度的图形工具是（     ）。（单选，1分）<br><strong>Gantt</strong>图<br>事件跟踪图<br>状态转换图<br>协作图</p>
+
+          
+        </div>
+        
+          <br>
+          
+
+
+  <section class='meta' id="footer-meta">
+    <div class='new-meta-box'>
+      
+        
+          
+
+        
+      
+        
+          
+  
+  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/%E5%A4%8D%E4%B9%A0%E8%B5%84%E6%96%99/" rel="nofollow"><i class="fas fa-tag" aria-hidden="true"></i><p>复习资料</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/%E9%A2%98%E5%BA%93/" rel="nofollow"><i class="fas fa-tag" aria-hidden="true"></i><p>题库</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/" rel="nofollow"><i class="fas fa-tag" aria-hidden="true"></i><p>软件工程</p></a></div>
+
+
+        
+      
+        
+          
+  <div class="new-meta-item share -mob-share-list">
+  <div class="-mob-share-list share-body">
+    
+      
+        <a class="-mob-share-qq" title="QQ好友" rel="external nofollow noopener noreferrer"
+          
+          href="http://connect.qq.com/widget/shareqq/index.html?url=https://blog.darkcrane.com/posts/9ac1b15a/&title=软件工程复习（预习）4 | DarkCrane&summary=Q1. 软件的发展经历了（     ）个发展阶段。（单选，1分）一二三四"
+          
+          >
+          
+            <img src="https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/logo/128/qq.png">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-qzone" title="QQ空间" rel="external nofollow noopener noreferrer"
+          
+          href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://blog.darkcrane.com/posts/9ac1b15a/&title=软件工程复习（预习）4 | DarkCrane&summary=Q1. 软件的发展经历了（     ）个发展阶段。（单选，1分）一二三四"
+          
+          >
+          
+            <img src="https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/logo/128/qzone.png">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-weibo" title="微博" rel="external nofollow noopener noreferrer"
+          
+          href="http://service.weibo.com/share/share.php?url=https://blog.darkcrane.com/posts/9ac1b15a/&title=软件工程复习（预习）4 | DarkCrane&summary=Q1. 软件的发展经历了（     ）个发展阶段。（单选，1分）一二三四"
+          
+          >
+          
+            <img src="https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/logo/128/weibo.png">
+          
+        </a>
+      
+    
+  </div>
+</div>
+
+
+
+        
+      
+    </div>
+  </section>
+
+
+        
+        
+            <div class="prev-next">
+                
+                    <section class="prev">
+                        <span class="art-item-left">
+                            <h6><i class="fas fa-chevron-left" aria-hidden="true"></i>&nbsp;上一页</h6>
+                            <h4>
+                                <a href="/posts/32f127a5/" rel="prev" title="为自己的网站添加404公益页面">
+                                  
+                                      为自己的网站添加404公益页面
+                                  
+                                </a>
+                            </h4>
+                            
+                                
+                                <h6 class="tags">
+                                    <a class="tag" href="/tags/%E7%BD%91%E7%AB%99%E6%90%AD%E5%BB%BA/"><i class="fas fa-tag fa-fw" aria-hidden="true"></i> 网站搭建</a> <a class="tag" href="/tags/%E5%85%AC%E7%9B%8A/"><i class="fas fa-tag fa-fw" aria-hidden="true"></i> 公益</a>
+                                </h6>
+                            
+                        </span>
+                    </section>
+                
+                
+                    <section class="next">
+                        <span class="art-item-right" aria-hidden="true">
+                            <h6>下一页&nbsp;<i class="fas fa-chevron-right" aria-hidden="true"></i></h6>
+                            <h4>
+                                <a href="/posts/4a524f9/" rel="prev" title="软件工程复习（预习）3">
+                                    
+                                        软件工程复习（预习）3
+                                    
+                                </a>
+                            </h4>
+                            
+                                
+                                <h6 class="tags">
+                                    <a class="tag" href="/tags/%E5%A4%8D%E4%B9%A0%E8%B5%84%E6%96%99/"><i class="fas fa-tag fa-fw" aria-hidden="true"></i> 复习资料</a> <a class="tag" href="/tags/%E9%A2%98%E5%BA%93/"><i class="fas fa-tag fa-fw" aria-hidden="true"></i> 题库</a> <a class="tag" href="/tags/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/"><i class="fas fa-tag fa-fw" aria-hidden="true"></i> 软件工程</a>
+                                </h6>
+                            
+                        </span>
+                    </section>
+                
+            </div>
+        
+      </section>
+    </article>
+  
+
+  
+    <!-- 显示推荐文章和评论 -->
+
+
+
+  
+
+
+  
+
+
+
+
+<!-- 根据页面mathjax变量决定是否加载MathJax数学公式js -->
+
+
+
+  <script>
+    window.subData = {
+      title: '软件工程复习（预习）4',
+      tools: true
+    }
+  </script>
+
+
+</div>
+<aside class='l_side'>
+  
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+        
+
+<section class="widget grid  card-shadow widget-blur desktop mobile">
+  
+  <header>
+    
+      <i class="fas fa-map-signs fa-fw" aria-hidden="true"></i><span class='name'>文档导航</span>
+    
+  </header>
+
+
+  <div class='content'>
+    <ul class="grid navigation">
+      
+        <li><a class="flat-box" title="/" href="/"
+          
+          
+          id="home">
+          
+            <i class="fas fa-bullhorn fa-fw" aria-hidden="true"></i>
+          
+          网站公告
+        </a></li>
+      
+        <li><a class="flat-box" title="/categories/" href="/categories/"
+          
+          
+          id="categories">
+          
+            <i class="fas fa-book fa-fw" aria-hidden="true"></i>
+          
+          文章分类
+        </a></li>
+      
+        <li><a class="flat-box" title="/tags/" href="/tags/"
+          
+          
+          id="tags">
+          
+            <i class="fas fa-tags fa-fw" aria-hidden="true"></i>
+          
+          全部标签
+        </a></li>
+      
+        <li><a class="flat-box" title="/archives/" href="/archives/"
+          
+          
+          id="archives">
+          
+            <i class="fas fa-archive fa-fw" aria-hidden="true"></i>
+          
+          文章归档
+        </a></li>
+      
+        <li><a class="flat-box" title="/friend/" href="/friend/"
+          
+          
+          id="friend">
+          
+            <i class="fas fa-user-friends fa-fw" aria-hidden="true"></i>
+          
+          友情链接
+        </a></li>
+      
+        <li><a class="flat-box" title="https://www.darkcrane.com/" href="https://www.darkcrane.com/"
+          
+          
+            target="_blank"
+          
+          id="https:www.darkcrane.com">
+          
+            <i class="fas fa-blog fa-fw" aria-hidden="true"></i>
+          
+          我的网站
+        </a></li>
+      
+    </ul>
+  </div>
+</section>
+
+      
+    
+      
+    
+  
+    
+      
+    
+      
+    
+      
+        
+  
+
+  <section class="widget category  card-shadow widget-blur desktop">
+    
+  <header>
+    
+      <a href='/blog/categories/'><i class="fas fa-folder-open fa-fw" aria-hidden="true"></i><span class='name'>文章分类</span></a>
+    
+  </header>
+
+
+    <div class='content'>
+      <ul class="entry navigation">
+        
+          <li><a class="flat-box"
+            title="/categories/%E5%A4%8D%E4%B9%A0%EF%BC%88%E9%A2%84%E4%B9%A0%EF%BC%89%E8%B5%84%E6%96%99/" href="/categories/%E5%A4%8D%E4%B9%A0%EF%BC%88%E9%A2%84%E4%B9%A0%EF%BC%89%E8%B5%84%E6%96%99/"
+            id="categoriesE5A48DE4B9A0EFBC88E9A284E4B9A0EFBC89E8B584E69699"
+            ><div class='name'>复习（预习）资料</div><div class='badge'>(5)</div></a></li>
+        
+          <li><a class="flat-box"
+            title="/categories/%E7%BD%91%E7%AB%99%E6%90%AD%E5%BB%BA/" href="/categories/%E7%BD%91%E7%AB%99%E6%90%AD%E5%BB%BA/"
+            id="categoriesE7BD91E7AB99E690ADE5BBBA"
+            ><div class='name'>网站搭建</div><div class='badge'>(1)</div></a></li>
+        
+      </ul>
+    </div>
+  </section>
+
+
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+        
+  
+
+  <section class="widget related_posts  card-shadow widget-blur desktop mobile">
+    
+  <header>
+    
+      <i class="fas fa-bookmark fa-fw" aria-hidden="true"></i><span class='name'>相关文章</span>
+    
+  </header>
+
+
+    <div class="content">
+      <ul class="popular-posts"><li class="popular-posts-item"><div class="popular-posts-title"><h3><a href="\posts\71689c93\" title="软件工程复习（预习）1" rel="bookmark">软件工程复习（预习）1</a></h3></div></li><li class="popular-posts-item"><div class="popular-posts-title"><h3><a href="\posts\73a2146f\" title="软件工程复习（预习）2" rel="bookmark">软件工程复习（预习）2</a></h3></div></li><li class="popular-posts-item"><div class="popular-posts-title"><h3><a href="\posts\4a524f9\" title="软件工程复习（预习）3" rel="bookmark">软件工程复习（预习）3</a></h3></div></li><li class="popular-posts-item"><div class="popular-posts-title"><h3><a href="\posts\8d4b7ae1\" title="计算机组成原理" rel="bookmark">计算机组成原理</a></h3></div></li></ul>
+    </div>
+  </section>
+
+
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  
+    
+      
+    
+      
+        
+
+
+
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  
+</aside>
+
+<footer class="clearfix white">
+  <br><br>
+  
+    <div class="social-wrapper">
+      
+        
+          <a href="/atom.xml"
+            class="social fas fa-rss flat-btn"
+            target="_blank"
+            rel="external nofollow noopener noreferrer">
+          </a>
+        
+      
+        
+          <a href="mailto:1757601608@qq.com"
+            class="social fas fa-envelope flat-btn"
+            target="_blank"
+            rel="external nofollow noopener noreferrer">
+          </a>
+        
+      
+        
+          <a href="https://github.com/youhua38tao"
+            class="social fab fa-github flat-btn"
+            target="_blank"
+            rel="external nofollow noopener noreferrer">
+          </a>
+        
+      
+        
+          <a href="https://music.163.com/#/user/home?id=435758240"
+            class="social fas fa-headphones-alt flat-btn"
+            target="_blank"
+            rel="external nofollow noopener noreferrer">
+          </a>
+        
+      
+    </div>
+  
+  
+    <br>
+    <div class="aplayer-container">
+      
+
+  
+    <meting-js
+      theme='#1BCDFC'
+      autoplay='false'
+      volume='0.7'
+      loop='all'
+      order='list'
+      fixed='true'
+      list-max-height='340px'
+      server='netease'
+      type='playlist'
+      id='4887550501'
+      list-folded='true'>
+    </meting-js>
+  
+
+
+    </div>
+  
+  <br>
+  <div><p>博客内容遵循 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank" rel="noopener">署名-非商业性使用-相同方式共享 4.0 国际 (CC BY-NC-SA 4.0) 协议</a></p>
+</div>
+  <div>
+    本站使用
+    <a href="https://volantis.js.org/" target="_blank" class="codename">Volantis</a>
+    作为主题
+    
+      ，
+      总访问量为
+      <span id="busuanzi_value_site_pv"><i class="fas fa-spinner fa-spin fa-fw" aria-hidden="true"></i></span>
+      次
+    
+    。
+  </div>
+  
+</footer>
+<script>setLoadingBarProgress(80);</script>
+
+
+      <script>setLoadingBarProgress(60);</script>
+    </div>
+    <a class="s-top fas fa-arrow-up fa-fw" href='javascript:void(0)'></a>
+  </div>
+  
+<script src="//cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+
+
+  <script>
+    
+    var SEARCH_SERVICE = "hexo" || "hexo";
+    var ROOT = "/" || "/";
+    if (!ROOT.endsWith('/')) ROOT += '/';
+  </script>
+
+
+  <script async src="https://instant.page/3.0.0" type="module" defer integrity="sha384-OeDn4XE77tdHo8pGtE1apMPmAipjoxUQ++eeJa6EtJCfHlvijigWiJpD7VDPWXV1"></script>
+
+
+  <script async src="https://cdn.jsdelivr.net/npm/aplayer@1.10/dist/APlayer.min.js"></script>
+  <script async src="https://cdn.jsdelivr.net/npm/meting@2.0/dist/Meting.min.js"></script>
+
+
+  <script src="//cdn.jsdelivr.net/npm/scrollreveal@4.0.5/dist/scrollreveal.min.js"></script>
+  <script type="text/javascript">
+    $(function() {
+      const $reveal = $('.reveal');
+      if ($reveal.length === 0) return;
+      const sr = ScrollReveal({ distance: 0 });
+      sr.reveal('.reveal');
+    });
+  </script>
+
+
+  
+<script src="//cdn.jsdelivr.net/npm/node-waves@0.7.6/dist/waves.min.js" async></script>
+
+  <script type="text/javascript">
+    $(function() {
+      Waves.attach('.flat-btn', ['waves-button']);
+      Waves.attach('.float-btn', ['waves-button', 'waves-float']);
+      Waves.attach('.float-btn-light', ['waves-button', 'waves-float', 'waves-light']);
+      Waves.attach('.flat-box', ['waves-block']);
+      Waves.attach('.float-box', ['waves-block', 'waves-float']);
+      Waves.attach('.waves-image');
+      Waves.init();
+    });
+  </script>
+
+
+  <script async src="//cdn.jsdelivr.net/gh/xaoxuu/cdn-busuanzi@2.3/js/busuanzi.pure.mini.js"></script>
+
+
+
+  
+  
+  
+    
+<script src="//cdn.jsdelivr.net/npm/jquery-backstretch@2.1.18/jquery.backstretch.min.js"></script>
+
+    <script type="text/javascript">
+      $(function(){
+        if ('') {
+          $('').backstretch(
+          ["https://cdn.jsdelivr.net/gh/xaoxuu/cdn-wallpaper/abstract/67239FBB-E15D-4F4F-8EE8-0F1C9F3C4E7C.jpeg", "https://cdn.jsdelivr.net/gh/xaoxuu/cdn-wallpaper/abstract/B951AE18-D431-417F-B3FE-A382403FF21B.jpeg", "https://cdn.jsdelivr.net/gh/xaoxuu/cdn-wallpaper/landscape/AEB33F9D-7294-4CF1-B8C5-3020748A9D45.jpeg", "https://cdn.jsdelivr.net/gh/xaoxuu/cdn-wallpaper/abstract/2884F904-F1F3-479E-AE27-5EBC291B63B0.jpeg", "https://cdn.jsdelivr.net/gh/xaoxuu/cdn-wallpaper/landscape/10A0FCE5-36A1-4AD0-8CF0-019259A89E03.jpeg", "https://cdn.jsdelivr.net/gh/xaoxuu/cdn-wallpaper/landscape/250662D4-5A21-4AAA-BB63-CD25CF97CFF1.jpeg", "https://cdn.jsdelivr.net/gh/xaoxuu/cdn-wallpaper/landscape/298468D7-E388-44A8-8CC5-8213BDC33CED.jpeg"],
+          {
+            duration: "10000",
+            fade: "2500"
+          });
+        } else {
+          $.backstretch(
+          ["https://cdn.jsdelivr.net/gh/xaoxuu/cdn-wallpaper/abstract/67239FBB-E15D-4F4F-8EE8-0F1C9F3C4E7C.jpeg", "https://cdn.jsdelivr.net/gh/xaoxuu/cdn-wallpaper/abstract/B951AE18-D431-417F-B3FE-A382403FF21B.jpeg", "https://cdn.jsdelivr.net/gh/xaoxuu/cdn-wallpaper/landscape/AEB33F9D-7294-4CF1-B8C5-3020748A9D45.jpeg", "https://cdn.jsdelivr.net/gh/xaoxuu/cdn-wallpaper/abstract/2884F904-F1F3-479E-AE27-5EBC291B63B0.jpeg", "https://cdn.jsdelivr.net/gh/xaoxuu/cdn-wallpaper/landscape/10A0FCE5-36A1-4AD0-8CF0-019259A89E03.jpeg", "https://cdn.jsdelivr.net/gh/xaoxuu/cdn-wallpaper/landscape/250662D4-5A21-4AAA-BB63-CD25CF97CFF1.jpeg", "https://cdn.jsdelivr.net/gh/xaoxuu/cdn-wallpaper/landscape/298468D7-E388-44A8-8CC5-8213BDC33CED.jpeg"],
+          {
+            duration: "10000",
+            fade: "2500"
+          });
+        }
+      });
+    </script>
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+<script src="/js/app.js"></script>
+
+
+
+  
+<script src="/js/search.js"></script>
+
+
+
+  
+<script src="//cdn.jsdelivr.net/gh/xaoxuu/cdn-volantis@20.2.41/js/comment_typing.js"></script>
+
+
+
+<!-- 复制 -->
+
+  <script src="//cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
+<script>
+  let COPY_SUCCESS = "复制成功";
+  let COPY_FAILURE = "复制失败";
+  /*页面载入完成后，创建复制按钮*/
+  !function (e, t, a) {
+    /* code */
+    var initCopyCode = function(){
+      var copyHtml = '';
+      copyHtml += '<button class="btn-copy" data-clipboard-snippet="">';
+      copyHtml += '  <i class="fa fa-copy"></i><span>复制</span>';
+      copyHtml += '</button>';
+      $(".highlight .code pre").before(copyHtml);
+      var clipboard = new ClipboardJS('.btn-copy', {
+        target: function(trigger) {
+          return trigger.nextElementSibling;
+        }
+      });
+
+      clipboard.on('success', function(e) {
+        //您可以加入成功提示
+        console.info('Action:', e.action);
+        console.info('Text:', e.text);
+        console.info('Trigger:', e.trigger);
+        success_prompt(COPY_SUCCESS);
+        e.clearSelection();
+      });
+      clipboard.on('error', function(e) {
+        //您可以加入失败提示
+        console.error('Action:', e.action);
+        console.error('Trigger:', e.trigger);
+        fail_prompt(COPY_FAILURE);
+      });
+    }
+    initCopyCode();
+
+  }(window, document);
+
+  /**
+   * 弹出式提示框，默认1.5秒自动消失
+   * @param message 提示信息
+   * @param style 提示样式，有alert-success、alert-danger、alert-warning、alert-info
+   * @param time 消失时间
+   */
+  var prompt = function (message, style, time)
+  {
+      style = (style === undefined) ? 'alert-success' : style;
+      time = (time === undefined) ? 1500 : time*1000;
+      $('<div>')
+          .appendTo('body')
+          .addClass('alert ' + style)
+          .html(message)
+          .show()
+          .delay(time)
+          .fadeOut();
+  };
+
+  // 成功提示
+  var success_prompt = function(message, time)
+  {
+      prompt(message, 'alert-success', time);
+  };
+
+  // 失败提示
+  var fail_prompt = function(message, time)
+  {
+      prompt(message, 'alert-danger', time);
+  };
+
+  // 提醒
+  var warning_prompt = function(message, time)
+  {
+      prompt(message, 'alert-warning', time);
+  };
+
+  // 信息提示
+  var info_prompt = function(message, time)
+  {
+      prompt(message, 'alert-info', time);
+  };
+
+</script>
+
+
+
+
+<!-- fancybox -->
+
+  <script src="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+<script>
+  let LAZY_LOAD_IMAGE = "";
+  $(".article-entry").find("fancybox").find("img").each(function () {
+      var element = document.createElement("a");
+      $(element).attr("data-fancybox", "gallery");
+      $(element).attr("href", $(this).attr("src"));
+      /* 图片采用懒加载处理时,
+       * 一般图片标签内会有个属性名来存放图片的真实地址，比如 data-original,
+       * 那么此处将原本的属性名src替换为对应属性名data-original,
+       * 修改如下
+       */
+       if (LAZY_LOAD_IMAGE) {
+         $(element).attr("href", $(this).attr("data-original"));
+       }
+      $(this).wrap(element);
+  });
+</script>
+
+
+
+
+
+
+  <script>setLoadingBarProgress(100);</script>
+</body>
+</html>
