@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://blog.darkcrane.com/"/>
-  <updated>2020-03-01T05:44:44.455Z</updated>
+  <updated>2020-03-01T07:38:50.906Z</updated>
   <id>https://blog.darkcrane.com/</id>
   
   <author>
@@ -17,24 +17,22 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>404 Not Found</title>
+    <title>公告</title>
     <link href="https://blog.darkcrane.com/posts/undefined/"/>
     <id>https://blog.darkcrane.com/posts/undefined/</id>
-    <published>2020-03-01T05:44:44.455Z</published>
-    <updated>2020-03-01T05:44:44.455Z</updated>
+    <published>2020-03-01T07:09:10.269Z</published>
+    <updated>2020-03-01T07:38:50.906Z</updated>
     
-    <content type="html"><![CDATA[<center><h1 style='border-bottom: none;font-size:64px;margin-top:.5em'>404</h1><p><b>很抱歉，您访问的页面不存在</b></p><p>可能是输入地址有误或该地址已被删除</p></center>]]></content>
+    <content type="html"><![CDATA[<p center large gray>通知</p><p center small gray>恭喜Van先生喜提网站一个</p><p><btn center large><a href="/top"><i class='fas fa-download'></i> 点击进入</a></btn></p>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;center&gt;
-&lt;h1 style=&#39;border-bottom: none;font-size:64px;margin-top:.5em&#39;&gt;404&lt;/h1&gt;
+        &lt;p center large gray&gt;通知&lt;/p&gt;
+&lt;p center small gray&gt;恭喜Van先生喜提网站一个&lt;/p&gt;
 
-&lt;p&gt;&lt;b&gt;很抱歉，您访问的页面不存在&lt;/b&gt;&lt;/p&gt;
-&lt;p&gt;可能是输入地址有误或该地址已被删除&lt;/p&gt;
-&lt;/cen
+&lt;p&gt;&lt;btn center large&gt;&lt;a href=&quot;/top&quot;&gt;&lt;i class=&#39;fas fa-download&#39;&gt;&lt;/i&gt; 点击进入
       
     
     </summary>

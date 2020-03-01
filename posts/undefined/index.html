@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   
-  <title>404 Not Found | DarkCrane</title>
+  <title>公告 | DarkCrane</title>
   
   
 
@@ -122,11 +122,31 @@
       
         <li>
           <a class="nav home white"
-            href="/friend/"
+            href="/links/"
             
             
-            id="friend">
+            id="links">
             <i class='fas fa-user-friends fa-fw'></i>&nbsp;友链
+          </a>
+        </li>
+      
+        <li>
+          <a class="nav home white"
+            href="/comment/"
+            
+            
+            id="comment">
+            <i class='fas fa-comments fa-fw'></i>&nbsp;留言板
+          </a>
+        </li>
+      
+        <li>
+          <a class="nav home white"
+            href="/about/"
+            
+            
+            id="about">
+            <i class='fas fa-bookmark fa-fw'></i>&nbsp;About
           </a>
         </li>
       
@@ -204,11 +224,29 @@
 							</li>
       			
   						<li>
-								<a class="nav flat-box" href="/friend"
+								<a class="nav flat-box" href="/links"
                   
                   
-                  id="friend">
+                  id="links">
 									<i class='fas fa-user-friends fa-fw'></i>&nbsp;友链
+								</a>
+							</li>
+      			
+  						<li>
+								<a class="nav flat-box" href="/comment/"
+                  
+                  
+                  id="comment">
+									<i class='fas fa-comments fa-fw'></i>&nbsp;留言
+								</a>
+							</li>
+      			
+  						<li>
+								<a class="nav flat-box" href="/about/"
+                  
+                  
+                  id="about">
+									<i class='fas fa-bookmark fa-fw'></i>&nbsp;About
 								</a>
 							</li>
       			
@@ -294,11 +332,29 @@
             </li>
           
             <li>
-							<a class="nav flat-box" href="/friend"
+							<a class="nav flat-box" href="/links"
                 
                 
-                id="friend">
+                id="links">
 								<i class='fas fa-user-friends fa-fw'></i>&nbsp;友链
+							</a>
+            </li>
+          
+            <li>
+							<a class="nav flat-box" href="/comment/"
+                
+                
+                id="comment">
+								<i class='fas fa-comments fa-fw'></i>&nbsp;留言
+							</a>
+            </li>
+          
+            <li>
+							<a class="nav flat-box" href="/about/"
+                
+                
+                id="about">
+								<i class='fas fa-bookmark fa-fw'></i>&nbsp;About
 							</a>
             </li>
           
@@ -342,7 +398,14 @@
       
       <div class='new-meta-box'>
         
+          
+            
+
+          
+        
       </div>
+      
+        <hr>
       
     </div>
   </section>
@@ -351,12 +414,11 @@
       <section class="article typo">
         <div class="article-entry" itemprop="articleBody">
           
-          <center>
-<h1 style='border-bottom: none;font-size:64px;margin-top:.5em'>404</h1>
+          <p center large gray>通知</p>
+<p center small gray>恭喜Van先生喜提网站一个</p>
 
-<p><b>很抱歉，您访问的页面不存在</b></p>
-<p>可能是输入地址有误或该地址已被删除</p>
-</center>
+<p><btn center large><a href="/top"><i class='fas fa-download'></i> 点击进入</a></btn></p>
+
           
         </div>
         
@@ -399,30 +461,6 @@
         
       </section>
     </article>
-  
-
-  
-    <!-- 显示推荐文章和评论 -->
-
-
-
-  <article class="post white-box comments card-shadow body-blur">
-    <section class="article typo">
-      <h4><i class="fas fa-comments fa-fw" aria-hidden="true"></i>&nbsp;评论</h4>
-      
-      
-      
-      
-        <section id="comments">
-          <div id="valine_container" class="valine_thread">
-            <i class="fas fa-spinner fa-spin fa-fw"></i>
-          </div>
-        </section>
-      
-    </section>
-  </article>
-
-
   
 
 
@@ -609,38 +647,6 @@
 
 
 
-
-  
-    
-<script src="/js/valine.js"></script>
-
-  
-  <script>
-  var GUEST_INFO = ['nick','mail','link'];
-  var guest_info = 'nick,mail,link'.split(',').filter(function(item){
-    return GUEST_INFO.indexOf(item) > -1
-  });
-  var notify = 'true' == true;
-  var verify = 'true' == true;
-  var valine = new Valine();
-  valine.init({
-    el: '#valine_container',
-    notify: notify,
-    verify: verify,
-    guest_info: guest_info,
-    
-      path: "/404.html",
-    
-    appId: "DlqDLjttythKItyfzQDp3rXc-gzGzoHsz",
-    appKey: "Km1zysOuCqrkG2qiA7Dzp1GW",
-    placeholder: "请留言告诉我您要访问哪个页面找不到了",
-    pageSize:'10',
-    avatar:'mp',
-    lang:'zh-cn',
-    visitor: 'false',
-    highlight:'true'
-  })
-  </script>
 
 
 

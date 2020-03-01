@@ -4,11 +4,11 @@
   
     
     <entry>
-      <title>404 Not Found</title>
+      <title>公告</title>
       <link href="/posts/undefined/"/>
       <url>/posts/undefined/</url>
       
-        <content type="html"><![CDATA[<center><h1 style='border-bottom: none;font-size:64px;margin-top:.5em'>404</h1><p><b>很抱歉，您访问的页面不存在</b></p><p>可能是输入地址有误或该地址已被删除</p></center>]]></content>
+        <content type="html"><![CDATA[<p center large gray>通知</p><p center small gray>恭喜Van先生喜提网站一个</p><p><btn center large><a href="/top"><i class='fas fa-download'></i> 点击进入</a></btn></p>]]></content>
       
       
       
