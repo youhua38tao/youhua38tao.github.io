@@ -644,7 +644,21 @@
 
 
 
-  
+  <article class="post white-box comments card-shadow body-blur">
+    <section class="article typo">
+      <h4><i class="fas fa-comments fa-fw" aria-hidden="true"></i>&nbsp;评论</h4>
+      
+      
+      
+      
+        <section id="comments">
+          <div id="valine_container" class="valine_thread">
+            <i class="fas fa-spinner fa-spin fa-fw"></i>
+          </div>
+        </section>
+      
+    </section>
+  </article>
 
 
   
@@ -842,7 +856,7 @@
 
 
     <div class="content">
-      <ul class="popular-posts"><li class="popular-posts-item"><div class="popular-posts-title"><h3><a href="\posts\71689c93\" title="软件工程复习（预习）1" rel="bookmark">软件工程复习（预习）1</a></h3></div></li><li class="popular-posts-item"><div class="popular-posts-title"><h3><a href="\posts\73a2146f\" title="软件工程复习（预习）2" rel="bookmark">软件工程复习（预习）2</a></h3></div></li></ul>
+      <ul class="popular-posts"><li class="popular-posts-item"><div class="popular-posts-title"><h3><a href="\posts\73a2146f\" title="软件工程复习（预习）2" rel="bookmark">软件工程复习（预习）2</a></h3></div></li><li class="popular-posts-item"><div class="popular-posts-title"><h3><a href="\posts\71689c93\" title="软件工程复习（预习）1" rel="bookmark">软件工程复习（预习）1</a></h3></div></li></ul>
     </div>
   </section>
 
@@ -1070,6 +1084,36 @@
 
 
 
+
+  
+    
+<script src="/js/valine.js"></script>
+
+  
+  <script>
+  var GUEST_INFO = ['nick','mail','link'];
+  var guest_info = 'nick,mail,link'.split(',').filter(function(item){
+    return GUEST_INFO.indexOf(item) > -1
+  });
+  var notify = 'true' == true;
+  var verify = 'true' == true;
+  var valine = new Valine();
+  valine.init({
+    el: '#valine_container',
+    notify: notify,
+    verify: verify,
+    guest_info: guest_info,
+    
+    appId: "DlqDLjttythKItyfzQDp3rXc-gzGzoHsz",
+    appKey: "Km1zysOuCqrkG2qiA7Dzp1GW",
+    placeholder: "这里仅供用户之间进行交流，如需反馈请移步「GitHub Issues」。",
+    pageSize:'10',
+    avatar:'mp',
+    lang:'zh-cn',
+    visitor: 'false',
+    highlight:'true'
+  })
+  </script>
 
 
 
