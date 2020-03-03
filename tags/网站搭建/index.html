@@ -523,11 +523,11 @@
         
           <a href="/tags/%E7%BD%91%E7%AB%99%E6%90%AD%E5%BB%BA/" rel="nofollow"><i class="fas fa-tag fa-fw"></i> 网站搭建</a>
         
-          <a href="/tags/%E7%BD%91%E7%AB%99%E4%BC%98%E5%8C%96/" rel="nofollow"><i class="fas fa-tag fa-fw"></i> 网站优化</a>
-        
           <a href="/tags/%E5%85%AC%E7%9B%8A/" rel="nofollow"><i class="fas fa-tag fa-fw"></i> 公益</a>
         
           <a href="/tags/%E5%9B%BE%E5%BA%8A/" rel="nofollow"><i class="fas fa-tag fa-fw"></i> 图床</a>
+        
+          <a href="/tags/%E7%BD%91%E7%AB%99%E4%BC%98%E5%8C%96/" rel="nofollow"><i class="fas fa-tag fa-fw"></i> 网站优化</a>
         
       </div>
      -->
@@ -1134,7 +1134,25 @@
     。
   </div>
   
+  <span id="timeDate">载入天数...</span><span id="times">载入时分秒...</span>
+  <script>
+      var now = new Date(); 
+      function createtime() { 
+          var grt= new Date("8/10/2019 17:38:00");//在此处修改你的建站时间，格式：月/日/年 时:分:秒
+          now.setTime(now.getTime()+250); 
+          days = (now - grt ) / 1000 / 60 / 60 / 24; dnum = Math.floor(days); 
+          hours = (now - grt ) / 1000 / 60 / 60 - (24 * dnum); hnum = Math.floor(hours); 
+          if(String(hnum).length ==1 ){hnum = "0" + hnum;} minutes = (now - grt ) / 1000 /60 - (24 * 60 * dnum) - (60 * hnum); 
+          mnum = Math.floor(minutes); if(String(mnum).length ==1 ){mnum = "0" + mnum;} 
+          seconds = (now - grt ) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum); 
+          snum = Math.round(seconds); if(String(snum).length ==1 ){snum = "0" + snum;} 
+          document.getElementById("timeDate").innerHTML = "本站已安全运行 "+dnum+" 天 "; 
+          document.getElementById("times").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒"; 
+      } 
+  setInterval("createtime()",250);
+  </script>
 </footer>
+
 <script>setLoadingBarProgress(80);</script>
 
 
@@ -1359,5 +1377,7 @@
 
 
   <script>setLoadingBarProgress(100);</script>
+  <!--单击显示文字-->
+  <script type="text/javascript" src="/js/click_show_text.js"></script>
 <script>!function(e){var c=Array.prototype.slice.call(document.querySelectorAll("img[data-original]"));function i(){for(var r=0;r<c.length;r++)t=c[r],0<=(n=t.getBoundingClientRect()).bottom&&0<=n.left&&n.top<=(e.innerHeight||document.documentElement.clientHeight)&&function(){var t,n,e,i,o=c[r];t=o,n=function(){c=c.filter(function(t){return o!==t})},e=new Image,i=t.getAttribute("data-original"),e.onload=function(){t.src=i,n&&n()},e.src=i}();var t,n}i(),e.addEventListener("scroll",function(){var t,n;t=i,n=e,clearTimeout(t.tId),t.tId=setTimeout(function(){t.call(n)},500)})}(this);</script><script>window.addEventListener("load",function(){var t=/\.(gif|jpg|jpeg|tiff|png)$/i,r=/^data:image\/[a-z]+;base64,/;Array.prototype.slice.call(document.querySelectorAll("img[data-original]")).forEach(function(a){var e=a.parentNode;"A"===e.tagName&&(e.href.match(t)||e.href.match(r))&&(e.href=a.dataset.original)})});</script></body>
 </html>
