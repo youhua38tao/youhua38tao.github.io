@@ -51,11 +51,11 @@
             
             <tag> 网站搭建 </tag>
             
+            <tag> 网站优化 </tag>
+            
             <tag> 公益 </tag>
             
             <tag> 图床 </tag>
-            
-            <tag> 网站优化 </tag>
             
         </tags>
       
@@ -64,11 +64,11 @@
     
     
     <entry>
-      <title>hexo优化(lazyload)</title>
+      <title>Hexo优化(lazyload)</title>
       <link href="/posts/629b4849/"/>
       <url>/posts/629b4849/</url>
       
-        <content type="html"><![CDATA[<h3 id="hexo-lazyload-image（图片懒加载插件）"><a href="#hexo-lazyload-image（图片懒加载插件）" class="headerlink" title="hexo-lazyload-image（图片懒加载插件）"></a>hexo-lazyload-image（图片懒加载插件）</h3><p>点击<a href="https://github.com/Troy-Yang/hexo-lazyload-image" target="_blank" rel="noopener">这里</a>查看</p><h4 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-lazyload-image --save</span><br></pre></td></tr></table></figure><a id="more"></a><h4 id="用法"><a href="#用法" class="headerlink" title="用法"></a>用法</h4><p>首先从你的hexo项目<code>_config.yml</code>中添加配置。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">lazyload:</span><br><span class="line">  enable: true </span><br><span class="line">  onlypost: false</span><br><span class="line">  loadingImg: # eg .&#x2F;images&#x2F;loading.gif</span><br></pre></td></tr></table></figure><p><strong>Onlypost</strong></p><ul><li>如果为true，则仅帖子或页面中的图像将支持延迟加载。</li><li>如果为false，则网站的整个图像将使用延迟加载，包括与主题距离较远的图像，但不包括CSS样式的背景图像。</li></ul><p><strong>loadingImg</strong></p><ul><li>如果不设置任何值（默认情况下），则它将使用默认的加载图像。</li><li>如果要自定义图像，则需要将加载的图像复制到当前主题图像文件夹，然后更改此路径以找到它。</li></ul><p><strong>为指定图像指定不延迟</strong></p><p>如果同时在markdown或html中的img标签上指定属性，我们也可以禁用惰性进程</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;img no-lazy src&#x3D;&quot;abc.png&quot; &#x2F;&gt;</span><br></pre></td></tr></table></figure><p>运行hexo命令。</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo clean &amp;&amp; hexo g</span><br></pre></td></tr></table></figure>]]></content>
+        <content type="html"><![CDATA[<h3 id="hexo-lazyload-image（图片懒加载插件）"><a href="#hexo-lazyload-image（图片懒加载插件）" class="headerlink" title="hexo-lazyload-image（图片懒加载插件）"></a>hexo-lazyload-image（图片懒加载插件）</h3><p>点击<btn><a href="https://github.com/Troy-Yang/hexo-lazyload-image" target="_blank" rel="noopener">这里</a></btn>查看</p><h4 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-lazyload-image --save</span><br></pre></td></tr></table></figure><a id="more"></a><h4 id="用法"><a href="#用法" class="headerlink" title="用法"></a>用法</h4><p>首先从你的hexo项目<code>_config.yml</code>中添加配置。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">lazyload:</span><br><span class="line">  enable: true </span><br><span class="line">  onlypost: false</span><br><span class="line">  loadingImg: # eg .&#x2F;images&#x2F;loading.gif</span><br></pre></td></tr></table></figure><p><strong>Onlypost</strong></p><ul><li>如果为true，则仅帖子或页面中的图像将支持延迟加载。</li><li>如果为false，则网站的整个图像将使用延迟加载，包括与主题距离较远的图像，但不包括CSS样式的背景图像。</li></ul><p><strong>loadingImg</strong></p><ul><li>如果不设置任何值（默认情况下），则它将使用默认的加载图像。</li><li>如果要自定义图像，则需要将加载的图像复制到当前主题图像文件夹，然后更改此路径以找到它。</li></ul><p><strong>为指定图像指定不延迟</strong></p><p>如果同时在markdown或html中的img标签上指定属性，我们也可以禁用惰性进程</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;img no-lazy src&#x3D;&quot;abc.png&quot; &#x2F;&gt;</span><br></pre></td></tr></table></figure><p>运行hexo命令。</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo clean &amp;&amp; hexo g</span><br></pre></td></tr></table></figure>]]></content>
       
       
       <categories>
@@ -87,19 +87,6 @@
             <tag> 美化 </tag>
             
         </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>公告</title>
-      <link href="/posts/undefined/"/>
-      <url>/posts/undefined/</url>
-      
-        <content type="html"><![CDATA[<p center large gray>通知</p><p center small gray>恭喜Van先生喜提网站一个</p><p><btn center large><a href="/top"><i class='fas fa-download'></i> 点击进入</a></btn></p>]]></content>
-      
-      
       
     </entry>
     
