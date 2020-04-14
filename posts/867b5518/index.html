@@ -18,7 +18,7 @@
   
     <title>Android 数据存储 - DarkCrane</title>
   
-    <meta name="keywords" content="学习,Android,数据存储">
+    <meta name="keywords" content="学习,Android,数据存储,SharePreferences,SQLite,File,Content Provider">
   
   
 
@@ -538,7 +538,7 @@
 <a id="more"></a>
 
 <p>Android系统提供了四种存储数据方式。分别为：SharePreferences、SQLite、Content Provider和File。但由于Android系统中，数据基本是私有的，都是存放于”data/data”程序包名目录下，所以要实现数据共享，正确方式是使用Content Provider</p>
-<h3 id="一-SharePreferences：轻量级数据存储"><a href="#一-SharePreferences：轻量级数据存储" class="headerlink" title="一 .SharePreferences：轻量级数据存储"></a>一 .SharePreferences：轻量级数据存储</h3><blockquote>
+<h3 id="一-、SharePreferences：轻量级数据存储"><a href="#一-、SharePreferences：轻量级数据存储" class="headerlink" title="一 、SharePreferences：轻量级数据存储"></a>一 、SharePreferences：轻量级数据存储</h3><blockquote>
 <p>SharedPreferences是一种数据存储方式，用来存储一些简单的信息，位于android.content包中，以键值对的模式进行存储，键值对（key-value）。对于存储的基本信息，如int,string,boolean,float和long。</p>
 </blockquote>
 <p><strong>获取方式：</strong></p>
@@ -556,7 +556,7 @@
 
 <p>使用SharePreferences读写数据，最终生成 的文件</p>
 <p>目录：/data/data/<applicationId>/shared_prefs</p>
-<h3 id="二-File-存储"><a href="#二-File-存储" class="headerlink" title="二. File 存储"></a>二. File 存储</h3><blockquote>
+<h3 id="二、File-存储"><a href="#二、File-存储" class="headerlink" title="二、File 存储"></a>二、File 存储</h3><blockquote>
 <p>文件存储是Android中最基本的一种存储方式，和Java中实现I/O的方式，由Context类提供openFileInput()和openFileOutput()方法打开。文件存储主要分两种存储，一种是内部存储，一种是外部存储。<br>内存存储(Internal Storage)：使用了FileInputStream类中的openFileInput()方法，用于读取数据；使用了FileOutputStream类中的openFileOutput()方法，用于写入数据。<br>外部存储(External Storage)：使用Enviroment类中的getExternalStorageDirectory()方法对外部存储上的文件进行读写。</p>
 </blockquote>
 <p><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAAEsCAMAAABOo35HAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAC9UExURVlZWdPT07KysmRkZIWFhfT09JmZmWZmZm9vb39/fxkZGUxMTDMzM3p6epCQkKamppubm729venp6cjIyN7e3tbW1s/Pz8LCwnx8fLS0tFZWVoiIiI+Pj6GhoeTk5Glpabu7u93d3evr66CgoJSUlKqqqsnJyeDg4Hd3d8PDw+Xl5bi4uNHR0dvb26Ojo6urq+fn51hYWDg4OCgoKHBwcK2traenp0FBQe7u7vHx8U5OTre3t8zMzHV1df///7GrnpQAAAA/dFJOU///////////////////////////////////////////////////////////////////////////////////AI4mfBcAAAUGSURBVHja7NoJb6M4GMZxY0NCD64kve/pMZ2d3Z297+X7f6zFNmBAMUXa6URl/q9UJSWPUPzrizFWRUlNLgEBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYYIEFAVhggQUWWGBBABZYYIEFFlgQgAUWWGCBBRYEYIEFFlhggQUBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYn6cCIcRXgvX/h9qcIVBqDdbEM8RCxGCB9QqXYRwHYDHBgwXWl8eKZKiESHI3Ba1kWs3fKixcaJUl1YyeBm7Ocq+yLItUiVBGnXxenSHJolIKEcwHq6ikbOX1YGVzQCTN8LPmSLreghUl9sN4Uw7yajMrLC0TZ1ImzqY6FEop0+pIaEN5HaoOxVuwEqFyc4I46uSlzOLqgxlh6UaR9l3VYWl9Fdoxb1Q90KJtu41pwwFW/WHhTtW8i7TafLCqRsk6bsGw63L9qurXRmuIlbT9lDQnlXU+nBFW1Q2qnZbDprWa2tjR90LZFqx1/+Td/HpGWLlrLDvIwTcx6dQ1Vrntbig68cDms3JwbA5Y1azs1ger6sNV/bbIw1jU81MvNAGrl58RVn8ozW+btF08iGFoAlYvP3csfVur1gJBEIA1uBmue5dhZDOyO2epbmgCVi8/I6x0MMHH9pjsTfBhNzQBq5uPZoQlB0uH3DZG4EZqQ26fL3sZq5uf09Ih6qw3i/pm6BZO0qZX7rrUS68Xsbr5ZE4rePMk08pk9aUZugfqppvs6AM1Acvlo/StP+6EbW06z8hJqxbYp2BZPQUnFsLsKuhQdaHqn5ewbF7KXIn0jWO5MqOQ7RaNLPtbNMmmhimj0GUmYLl8Gs0Lq4wyPbTu1l2QKqHSouzs3OlDIslW5SQsnY/NXmFplyNvEuuLV/Tau9BzwiraDUSwXmysztYWWNtL1psXeumgIrDGaqXvBfUuvtqUYI3V2t1wk1e2msFluJJm6zDJXv/fIfjPP7DAAgsssCiwwAILLLDAosACCyywwAKLAgsssMACC6zt9fDz/v75tyOB+98PD2+ORgKffjw4OP1uJPDxl+Xy8v1I4MPF3t7VNyOB4/vF4uzdzrG+39f1kz/w66Guv/yBvw90KX/gZKkr8Qf+2dOV+gNHC12/7RxrabD2/a31bLAO/a11YbAO/K21MFhLf2s9Gqw9f2vdGqzFu11jnVusE2/gxmI9eQOnFuvYG7i0WH7uK4t15w2cWazrXWP9a7H8f/bQYvm/6IPF+sF/pVssf19Ii/WH/0K2WH/uGuvEWC39gSdj9Twy+Rqri5EZx1gt/IE7Y/XoD1wbq9vd3w1PlufnD2OBp+ebm/uxwPHF6emnscDR4vLy41jg7vHq6sNY4Pr27OyYdRaLUrDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssL6u+k+AAQCR9eHtLKvLfwAAAABJRU5ErkJggg==" data-original="https://cdn.jsdelivr.net/gh/youhua38tao/CDN/img/20200305215235.png" alt=""></p>
@@ -647,7 +647,7 @@
 
 
     <div class="content">
-      <ul class="popular-posts"><li class="popular-posts-item"><div class="popular-posts-title"><h3><a href="\posts\f0626deb\" title="Android Fragment" rel="bookmark">Android Fragment</a></h3></div></li><li class="popular-posts-item"><div class="popular-posts-title"><h3><a href="\posts\9a3e3673\" title="Android BroadcastReceiver广播" rel="bookmark">Android BroadcastReceiver广播</a></h3></div></li></ul>
+      <ul class="popular-posts"><li class="popular-posts-item"><div class="popular-posts-title"><h3><a href="\posts\9a3e3673\" title="Android BroadcastReceiver广播" rel="bookmark">Android BroadcastReceiver广播</a></h3></div></li><li class="popular-posts-item"><div class="popular-posts-title"><h3><a href="\posts\f0626deb\" title="Android Fragment" rel="bookmark">Android Fragment</a></h3></div></li></ul>
     </div>
   </section>
 
@@ -694,10 +694,10 @@
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2020-03-05T22:46:17+08:00">
+          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2020-03-06T09:28:31+08:00">
   <a class='notlink'>
     <i class="fas fa-save" aria-hidden="true"></i>
-    <p>更新于：2020年3月5日</p>
+    <p>更新于：2020年3月6日</p>
   </a>
 </div>
 
@@ -706,7 +706,7 @@
         
           
   
-  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/%E5%AD%A6%E4%B9%A0/" rel="nofollow"><i class="fas fa-tag" aria-hidden="true"></i>&nbsp;<p>学习</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/Android/" rel="nofollow"><i class="fas fa-tag" aria-hidden="true"></i>&nbsp;<p>Android</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/%E6%95%B0%E6%8D%AE%E5%AD%98%E5%82%A8/" rel="nofollow"><i class="fas fa-tag" aria-hidden="true"></i>&nbsp;<p>数据存储</p></a></div>
+  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/%E5%AD%A6%E4%B9%A0/" rel="nofollow"><i class="fas fa-tag" aria-hidden="true"></i>&nbsp;<p>学习</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/Android/" rel="nofollow"><i class="fas fa-tag" aria-hidden="true"></i>&nbsp;<p>Android</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/%E6%95%B0%E6%8D%AE%E5%AD%98%E5%82%A8/" rel="nofollow"><i class="fas fa-tag" aria-hidden="true"></i>&nbsp;<p>数据存储</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/SharePreferences/" rel="nofollow"><i class="fas fa-tag" aria-hidden="true"></i>&nbsp;<p>SharePreferences</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/SQLite/" rel="nofollow"><i class="fas fa-tag" aria-hidden="true"></i>&nbsp;<p>SQLite</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/File/" rel="nofollow"><i class="fas fa-tag" aria-hidden="true"></i>&nbsp;<p>File</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/Content-Provider/" rel="nofollow"><i class="fas fa-tag" aria-hidden="true"></i>&nbsp;<p>Content Provider</p></a></div>
 
 
         
@@ -771,6 +771,25 @@
         
         
           <div class="prev-next">
+            
+              <section class="prev">
+                <span class="art-item-left">
+                  <h4>
+                    <a href="/posts/f6f15960/" rel="prev" title="免安装脚本使用B站动态头像教程">
+                      <i class="fas fa-chevron-left" aria-hidden="true"></i>
+                      
+                        免安装脚本使用B站动态头像教程
+                      
+                    </a>
+                  </h4>
+                  
+                    
+                    <h6 class="tags">
+                      &nbsp;<a class="tag" href="/tags/%E5%B7%A5%E5%85%B7/"><i class="fas fa-tag" aria-hidden="true"></i> 工具</a> <a class="tag" href="/tags/%E8%84%9A%E6%9C%AC/"><i class="fas fa-tag" aria-hidden="true"></i> 脚本</a> <a class="tag" href="/tags/%E6%8A%98%E8%85%BE/"><i class="fas fa-tag" aria-hidden="true"></i> 折腾</a> <a class="tag" href="/tags/b%E7%AB%99/"><i class="fas fa-tag" aria-hidden="true"></i> b站</a> <a class="tag" href="/tags/bilbili/"><i class="fas fa-tag" aria-hidden="true"></i> bilbili</a> <a class="tag" href="/tags/%E5%93%94%E5%93%A9%E5%93%94%E5%93%A9/"><i class="fas fa-tag" aria-hidden="true"></i> 哔哩哔哩</a> <a class="tag" href="/tags/%E5%A4%B4%E5%83%8F/"><i class="fas fa-tag" aria-hidden="true"></i> 头像</a>
+                    </h6>
+                  
+                </span>
+              </section>
             
             
               <section class="next">
@@ -960,6 +979,11 @@
             ><div class='name'>Android</div><div class='badge'>(3)</div></a></li>
         
           <li><a class="flat-box"
+            title="/categories/%E5%B7%A5%E5%85%B7/" href="/categories/%E5%B7%A5%E5%85%B7/"
+            id="categoriesE5B7A5E585B7"
+            ><div class='name'>工具</div><div class='badge'>(1)</div></a></li>
+        
+          <li><a class="flat-box"
             title="/categories/%E7%BD%91%E7%AB%99%E6%90%AD%E5%BB%BA/" href="/categories/%E7%BD%91%E7%AB%99%E6%90%AD%E5%BB%BA/"
             id="categoriesE7BD91E7AB99E690ADE5BBBA"
             ><div class='name'>网站搭建</div><div class='badge'>(3)</div></a></li>
@@ -986,7 +1010,7 @@
 
 
     <div class='content'>
-      <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#一-SharePreferences：轻量级数据存储"><span class="toc-text">一 .SharePreferences：轻量级数据存储</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#二-File-存储"><span class="toc-text">二. File 存储</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#三、Sqlite-轻量级数据库，适合应用移动端数据存储"><span class="toc-text">三、Sqlite 轻量级数据库，适合应用移动端数据存储</span></a></li></ol>
+      <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#一-、SharePreferences：轻量级数据存储"><span class="toc-text">一 、SharePreferences：轻量级数据存储</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#二、File-存储"><span class="toc-text">二、File 存储</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#三、Sqlite-轻量级数据库，适合应用移动端数据存储"><span class="toc-text">三、Sqlite 轻量级数据库，适合应用移动端数据存储</span></a></li></ol>
     </div>
   </section>
 
