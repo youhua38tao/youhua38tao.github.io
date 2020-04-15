@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<head hexo-theme='https://volantis.js.org/#1.7.3'>
+<head hexo-theme='https://volantis.js.org/#2.6.1'>
   <meta charset="utf-8">
   <!-- SEO相关 -->
   
@@ -34,7 +34,7 @@
   
 
   <!-- link -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.12.1/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13/css/all.min.css">
   
     
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
@@ -58,8 +58,9 @@
   
 
   
+  
     
-<link rel="stylesheet" href="/style.css">
+<link rel="stylesheet" href="/css/style.css">
 
   
 
@@ -86,221 +87,168 @@
 
 <body>
   
-  <div class="cover-wrapper">
-    <cover class='cover post half'>
+  <div id="loading-bar-wrapper">
+  <div id="loading-bar"></div>
+</div>
+<header class="l_header shadow blur">
+  <div class='container'>
+  <div class='wrapper'>
+    <div class='nav-sub'>
+      <p class="title"></p>
+      <ul class='switcher nav-list-h'>
+        <li><a class="s-comment fas fa-comments fa-fw" target="_self" href='javascript:void(0)'></a></li>
+        
+          <li><a class="s-toc fas fa-list fa-fw" target="_self" href='javascript:void(0)'></a></li>
+        
+      </ul>
+    </div>
+		<div class="nav-main">
       
         
-  <p class="title ">DarkCrane</p>
-  
-    <p class="subtitle ">A Performance Artist</p>
-  
-
-
-  <div class="m_search">
-    <form name="searchform" class="form u-search-form">
-      <i class="icon fas fa-search fa-fw"></i>
-      <input type="text" class="input u-search-input" placeholder="请用力点我" />
-    </form>
-  </div>
-
-<div class='menu navigation'>
-  <ul class='h-list'>
-    
-      
-        <li>
-          <a class="nav home "
-            href="/top"
-            
-            
-            id="top">
-            <i class='fas fa-bullhorn fa-fw'></i>&nbsp;公告
-          </a>
-        </li>
-      
-        <li>
-          <a class="nav home "
-            href="/"
-            
-            
-            id="home">
-            <i class='fas fa-house-damage fa-fw'></i>&nbsp;首页
-          </a>
-        </li>
-      
-        <li>
-          <a class="nav home "
-            href="/archives/"
-            
-            
-            id="archives">
-            <i class='fas fa-archive fa-fw'></i>&nbsp;归档
-          </a>
-        </li>
-      
-        <li>
-          <a class="nav home "
-            href="/categories/"
-            
-            
-            id="categories">
-            <i class='fas fa-book fa-fw'></i>&nbsp;分类
-          </a>
-        </li>
-      
-        <li>
-          <a class="nav home "
-            href="/tags/"
-            
-            
-            id="tags">
-            <i class='fas fa-tags fa-fw'></i>&nbsp;标签
-          </a>
-        </li>
-      
-        <li>
-          <a class="nav home "
-            href="/links/"
-            
-            
-            id="links">
-            <i class='fas fa-user-friends fa-fw'></i>&nbsp;友链
-          </a>
-        </li>
-      
-        <li>
-          <a class="nav home "
-            href="/comment/"
-            
-            
-            id="comment">
-            <i class='fas fa-comments fa-fw'></i>&nbsp;留言板
-          </a>
-        </li>
-      
-        <li>
-          <a class="nav home "
-            href="/about/"
-            
-            
-            id="about">
-            <i class='fas fa-info-circle fa-fw'></i>&nbsp;About
-          </a>
-        </li>
-      
-        <li>
-          <a class="nav home "
-            href="https://www.darkcrane.com"
-            
-            
-              target="_blank"
-            
-            id="https:www.darkcrane.com">
-            <i class='fas fa-blog fa-fw'></i>&nbsp;网站
-          </a>
-        </li>
-      
-    
-  </ul>
-</div>
-
-      
-    </cover>
-    <header class="l_header nav-blur">
-  <div id="loading-bar-wrapper">
-    <div id="loading-bar"></div>
-  </div>
-	<div class='wrapper'>
-		<div class="nav-main container container--flex">
-      
-        <a class="logo flat-box" target="_self" href='/' >
+        <a class="title flat-box" target="_self" href='/'>
           
-            
-              
-              
-                DarkCrane
-              
-            
+          
+          
+            DarkCrane
+          
           
         </a>
       
 
 			<div class='menu navigation'>
-				<ul class='h-list'>
+				<ul class='nav-list-h'>
           
           
-            <li>
-              <a class="nav flat-box" href="/"
-                
-                
-                id="home">
-                <i class='fas fa-house-damage fa-fw'></i>&nbsp;首页
-              </a>
-            </li>
           
-            <li>
-              <a class="nav flat-box" href="/archives"
+            
+            
+              <li>
+                <a class="flat-box" href=/
+                  
+                  
+                  
+                    id="home"
+                  >
+                  <i class='fas fa-house-damage fa-fw'></i>首页
+                </a>
                 
-                
-                id="archives">
-                <i class='fas fa-archive fa-fw'></i>&nbsp;归档
-              </a>
-            </li>
+              </li>
+            
           
-            <li>
-              <a class="nav flat-box" href="/categories"
-                
-                
-                id="categories">
-                <i class='fas fa-book fa-fw'></i>&nbsp;分类
-              </a>
-            </li>
           
-            <li>
-              <a class="nav flat-box" href="/tags"
+            
+            
+              <li>
+                <a class="flat-box" href=/archives
+                  
+                  
+                  
+                    id="archives"
+                  >
+                  <i class='fas fa-archive fa-fw'></i>归档
+                </a>
                 
-                
-                id="tags">
-                <i class='fas fa-tags fa-fw'></i>&nbsp;标签
-              </a>
-            </li>
+              </li>
+            
           
-            <li>
-              <a class="nav flat-box" href="/links"
-                
-                
-                id="links">
-                <i class='fas fa-user-friends fa-fw'></i>&nbsp;友链
-              </a>
-            </li>
           
-            <li>
-              <a class="nav flat-box" href="/comment/"
+            
+            
+              <li>
+                <a class="flat-box" href=/categories
+                  
+                  
+                  
+                    id="categories"
+                  >
+                  <i class='fas fa-book fa-fw'></i>分类
+                </a>
                 
-                
-                id="comment">
-                <i class='fas fa-comments fa-fw'></i>&nbsp;留言
-              </a>
-            </li>
+              </li>
+            
           
-            <li>
-              <a class="nav flat-box" href="/about/"
-                
-                
-                id="about">
-                <i class='fas fa-info-circle fa-fw'></i>&nbsp;About
-              </a>
-            </li>
           
-            <li>
-              <a class="nav flat-box" href="https://www.darkcrane.com"
+            
+            
+              <li>
+                <a class="flat-box" href=/tags
+                  
+                  
+                  
+                    id="tags"
+                  >
+                  <i class='fas fa-tags fa-fw'></i>标签
+                </a>
                 
+              </li>
+            
+          
+          
+            
+            
+              <li>
+                <a class="flat-box" href=/links
+                  
+                  
+                  
+                    id="links"
+                  >
+                  <i class='fas fa-user-friends fa-fw'></i>友链
+                </a>
                 
-                  target="_blank"
+              </li>
+            
+          
+          
+            
+            
+              <li>
+                <a class="flat-box" href=/comment/
+                  
+                  
+                  
+                    id="comment"
+                  >
+                  <i class='fas fa-comments fa-fw'></i>留言
+                </a>
                 
-                id="https:www.darkcrane.com">
-                <i class='fas fa-blog fa-fw'></i>&nbsp;网站
-              </a>
-            </li>
+              </li>
+            
+          
+          
+            
+            
+              <li>
+                <a class="flat-box" href=/about/
+                  
+                  
+                  
+                    id="about"
+                  >
+                  <i class='fas fa-info-circle fa-fw'></i>About
+                </a>
+                
+              </li>
+            
+          
+          
+            
+            
+              <li>
+                <a class="flat-box" href=https://www.darkcrane.com
+                  
+                  
+                    target="_blank"
+                  
+                  
+                    id="https:wwwdarkcranecom"
+                  >
+                  <i class='fas fa-blog fa-fw'></i>网站
+                </a>
+                
+              </li>
+            
+          
           
 				</ul>
 			</div>
@@ -312,133 +260,157 @@
         </form>
       </div>
 
-			<ul class='switcher h-list'>
+			<ul class='switcher nav-list-h'>
 				
-					<li class='s-search'><a class="fas fa-search fa-fw" target="_self" href='javascript:void(0)'></a></li>
+					<li><a class="s-search fas fa-search fa-fw" target="_self" href='javascript:void(0)'></a></li>
 				
-				<li class='s-menu'><a class="fas fa-bars fa-fw" target="_self" href='javascript:void(0)'></a></li>
-			</ul>
-		</div>
-
-		<div class='nav-sub container container--flex'>
-			<a class="logo flat-box"></a>
-			<ul class='switcher h-list'>
-				<li class='s-comment'><a class="flat-btn fas fa-comments fa-fw" target="_self" href='javascript:void(0)'></a></li>
-        
-          <li class='s-toc'><a class="flat-btn fas fa-list fa-fw" target="_self" href='javascript:void(0)'></a></li>
-        
+				<li>
+          <a class="s-menu fas fa-bars fa-fw" target="_self" href='javascript:void(0)'></a>
+          <ul class="menu-phone list-v navigation white-box">
+            
+              
+            
+              <li>
+                <a class="flat-box" href=/
+                  
+                  
+                  
+                    id="home"
+                  >
+                  <i class='fas fa-house-damage fa-fw'></i>首页
+                </a>
+                
+              </li>
+            
+          
+            
+              
+            
+              <li>
+                <a class="flat-box" href=/archives
+                  
+                  
+                  
+                    id="archives"
+                  >
+                  <i class='fas fa-archive fa-fw'></i>归档
+                </a>
+                
+              </li>
+            
+          
+            
+              
+            
+              <li>
+                <a class="flat-box" href=/categories
+                  
+                  
+                  
+                    id="categories"
+                  >
+                  <i class='fas fa-book fa-fw'></i>分类
+                </a>
+                
+              </li>
+            
+          
+            
+              
+            
+              <li>
+                <a class="flat-box" href=/tags
+                  
+                  
+                  
+                    id="tags"
+                  >
+                  <i class='fas fa-tags fa-fw'></i>标签
+                </a>
+                
+              </li>
+            
+          
+            
+              
+            
+              <li>
+                <a class="flat-box" href=/links
+                  
+                  
+                  
+                    id="links"
+                  >
+                  <i class='fas fa-user-friends fa-fw'></i>友链
+                </a>
+                
+              </li>
+            
+          
+            
+              
+            
+              <li>
+                <a class="flat-box" href=/comment/
+                  
+                  
+                  
+                    id="comment"
+                  >
+                  <i class='fas fa-comments fa-fw'></i>留言
+                </a>
+                
+              </li>
+            
+          
+            
+              
+            
+              <li>
+                <a class="flat-box" href=/about/
+                  
+                  
+                  
+                    id="about"
+                  >
+                  <i class='fas fa-info-circle fa-fw'></i>About
+                </a>
+                
+              </li>
+            
+          
+            
+              
+            
+              <li>
+                <a class="flat-box" href=https://www.darkcrane.com
+                  
+                  
+                    target="_blank"
+                  
+                  
+                    id="https:wwwdarkcranecom"
+                  >
+                  <i class='fas fa-blog fa-fw'></i>网站
+                </a>
+                
+              </li>
+            
+          
+            
+          </ul>
+        </li>
 			</ul>
 		</div>
 	</div>
+  </div>
 </header>
-	<aside class="menu-phone white-box">
-    <header>
-		<nav class="menu navigation">
-      <ul>
-        
-        
-          <li>
-            <a class="nav flat-box" href="/"
-              
-              
-              id="home">
-              <i class='fas fa-house-damage fa-fw'></i>&nbsp;首页
-            </a>
-          </li>
-        
-          <li>
-            <a class="nav flat-box" href="/top"
-              
-              
-              id="top">
-              <i class='fas fa-bullhorn fa-fw'></i>&nbsp;公告
-            </a>
-          </li>
-        
-          <li>
-            <a class="nav flat-box" href="/archives/"
-              
-              
-              id="archives">
-              <i class='fas fa-archive fa-fw'></i>&nbsp;归档
-            </a>
-          </li>
-        
-          <li>
-            <a class="nav flat-box" href="/categories"
-              
-              
-              id="categories">
-              <i class='fas fa-book fa-fw'></i>&nbsp;分类
-            </a>
-          </li>
-        
-          <li>
-            <a class="nav flat-box" href="/tags"
-              
-              
-              id="tags">
-              <i class='fas fa-tags fa-fw'></i>&nbsp;标签
-            </a>
-          </li>
-        
-          <li>
-            <a class="nav flat-box" href="/links"
-              
-              
-              id="links">
-              <i class='fas fa-user-friends fa-fw'></i>&nbsp;友链
-            </a>
-          </li>
-        
-          <li>
-            <a class="nav flat-box" href="/comment/"
-              
-              
-              id="comment">
-              <i class='fas fa-comments fa-fw'></i>&nbsp;留言
-            </a>
-          </li>
-        
-          <li>
-            <a class="nav flat-box" href="/photo/"
-              
-              
-              id="photo">
-              <i class='fas fa-images fa-fw'></i>&nbsp;照片墙
-            </a>
-          </li>
-        
-          <li>
-            <a class="nav flat-box" href="/about/"
-              
-              
-              id="about">
-              <i class='fas fa-info-circle fa-fw'></i>&nbsp;About
-            </a>
-          </li>
-        
-          <li>
-            <a class="nav flat-box" href="https://www.darkcrane.com"
-              
-              
-                target="_blank"
-              
-              id="https:www.darkcrane.com">
-              <i class='fas fa-blog fa-fw'></i>&nbsp;网站
-            </a>
-          </li>
-        
-      </ul>
-		</nav>
-    </header>
-	</aside>
+
 <script>setLoadingBarProgress(40);</script>
 
-  </div>
 
 
-  <div class="l_body">
+  <div class="l_body nocover">
     <div class='body-wrapper'>
       
 
@@ -446,13 +418,14 @@
   
 
   
-    <article id="post" class="post white-box   article-type-post" itemscope itemprop="blogPost">
+    <article id="post" class="post white-box shadow floatable article-type-post" itemscope itemprop="blogPost">
       
 
 
   <section class='meta'>
     
       
+        
 
   
     <meting-js
@@ -468,11 +441,11 @@
   
 
 
-    
-    
-    <div class="meta" id="header-meta">
       
+      
+      <div class="meta" id="header-meta">
         
+          
   
     <h1 class="title">
       <a href="/posts/629b4849/">
@@ -482,13 +455,13 @@
   
 
 
-      
-      <div class='new-meta-box'>
         
-          
-        
+        <div class='new-meta-box'>
           
             
+          
+            
+              
 <div class='new-meta-item author'>
   <a href="https://blog.darkcrane.com" rel="nofollow">
     <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAAEsCAMAAABOo35HAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAC9UExURVlZWdPT07KysmRkZIWFhfT09JmZmWZmZm9vb39/fxkZGUxMTDMzM3p6epCQkKamppubm729venp6cjIyN7e3tbW1s/Pz8LCwnx8fLS0tFZWVoiIiI+Pj6GhoeTk5Glpabu7u93d3evr66CgoJSUlKqqqsnJyeDg4Hd3d8PDw+Xl5bi4uNHR0dvb26Ojo6urq+fn51hYWDg4OCgoKHBwcK2traenp0FBQe7u7vHx8U5OTre3t8zMzHV1df///7GrnpQAAAA/dFJOU///////////////////////////////////////////////////////////////////////////////////AI4mfBcAAAUGSURBVHja7NoJb6M4GMZxY0NCD64kve/pMZ2d3Z297+X7f6zFNmBAMUXa6URl/q9UJSWPUPzrizFWRUlNLgEBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYYIEFAVhggQUWWGBBABZYYIEFFlgQgAUWWGCBBRYEYIEFFlhggQUBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYn6cCIcRXgvX/h9qcIVBqDdbEM8RCxGCB9QqXYRwHYDHBgwXWl8eKZKiESHI3Ba1kWs3fKixcaJUl1YyeBm7Ocq+yLItUiVBGnXxenSHJolIKEcwHq6ikbOX1YGVzQCTN8LPmSLreghUl9sN4Uw7yajMrLC0TZ1ImzqY6FEop0+pIaEN5HaoOxVuwEqFyc4I46uSlzOLqgxlh6UaR9l3VYWl9Fdoxb1Q90KJtu41pwwFW/WHhTtW8i7TafLCqRsk6bsGw63L9qurXRmuIlbT9lDQnlXU+nBFW1Q2qnZbDprWa2tjR90LZFqx1/+Td/HpGWLlrLDvIwTcx6dQ1Vrntbig68cDms3JwbA5Y1azs1ger6sNV/bbIw1jU81MvNAGrl58RVn8ozW+btF08iGFoAlYvP3csfVur1gJBEIA1uBmue5dhZDOyO2epbmgCVi8/I6x0MMHH9pjsTfBhNzQBq5uPZoQlB0uH3DZG4EZqQ26fL3sZq5uf09Ih6qw3i/pm6BZO0qZX7rrUS68Xsbr5ZE4rePMk08pk9aUZugfqppvs6AM1Acvlo/StP+6EbW06z8hJqxbYp2BZPQUnFsLsKuhQdaHqn5ewbF7KXIn0jWO5MqOQ7RaNLPtbNMmmhimj0GUmYLl8Gs0Lq4wyPbTu1l2QKqHSouzs3OlDIslW5SQsnY/NXmFplyNvEuuLV/Tau9BzwiraDUSwXmysztYWWNtL1psXeumgIrDGaqXvBfUuvtqUYI3V2t1wk1e2msFluJJm6zDJXv/fIfjPP7DAAgsssCiwwAILLLDAosACCyywwAKLAgsssMACC6zt9fDz/v75tyOB+98PD2+ORgKffjw4OP1uJPDxl+Xy8v1I4MPF3t7VNyOB4/vF4uzdzrG+39f1kz/w66Guv/yBvw90KX/gZKkr8Qf+2dOV+gNHC12/7RxrabD2/a31bLAO/a11YbAO/K21MFhLf2s9Gqw9f2vdGqzFu11jnVusE2/gxmI9eQOnFuvYG7i0WH7uK4t15w2cWazrXWP9a7H8f/bQYvm/6IPF+sF/pVssf19Ii/WH/0K2WH/uGuvEWC39gSdj9Twy+Rqri5EZx1gt/IE7Y/XoD1wbq9vd3w1PlufnD2OBp+ebm/uxwPHF6emnscDR4vLy41jg7vHq6sNY4Pr27OyYdRaLUrDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssL6u+k+AAQCR9eHtLKvLfwAAAABJRU5ErkJggg==" data-original="https://cdn.jsdelivr.net/gh/youhua38tao/CDN/img/海绵宝宝头像.jpg">
@@ -496,41 +469,42 @@
   </a>
 </div>
 
-          
-        
+            
           
             
+              
   
   <div class='new-meta-item category'>
     <a href='/categories/%E7%BD%91%E7%AB%99%E6%90%AD%E5%BB%BA/' rel="nofollow">
-      <i class="fas fa-folder-open" aria-hidden="true"></i>
+      <i class="fas fa-folder-open fa-fw" aria-hidden="true"></i>
       <p>网站搭建</p>
     </a>
   </div>
 
 
+            
           
-        
-          
-            <div class="new-meta-item date">
+            
+              <div class="new-meta-item date">
   <a class='notlink'>
-    <i class="fas fa-edit" aria-hidden="true"></i>
+    <i class="fas fa-calendar-alt fa-fw" aria-hidden="true"></i>
     <p>发布于：2020年3月1日</p>
   </a>
 </div>
 
-          
-        
+            
           
             
+              
 
+            
           
+        </div>
+        
+          <hr>
         
       </div>
-      
-        <hr>
-      
-    </div>
+    
   </section>
 
 
@@ -570,24 +544,19 @@
           
             <br>
             
+              
   
     
     
+
+
+
   
 
-  <section class="widget related_posts  desktop mobile">
+  
     
-  <header>
     
-      <i class="fas fa-bookmark fa-fw" aria-hidden="true"></i><span class='name'>相关文章</span>
-    
-  </header>
 
-
-    <div class="content">
-      <ul class="popular-posts"><li class="popular-posts-item"><div class="popular-posts-title"><h3><a href="\posts\560e8e48\" title="博客美化" rel="bookmark">博客美化</a></h3></div></li><li class="popular-posts-item"><div class="popular-posts-title"><h3><a href="\posts\f95e7e65\" title="Github+jsDelivr+PicGo 打造稳定快速、高效免费图床" rel="bookmark">Github+jsDelivr+PicGo 打造稳定快速、高效免费图床</a></h3></div></li><li class="popular-posts-item"><div class="popular-posts-title"><h3><a href="\posts\32f127a5\" title="为自己的网站添加404公益页面" rel="bookmark">为自己的网站添加404公益页面</a></h3></div></li></ul>
-    </div>
-  </section>
 
 
   
@@ -602,12 +571,8 @@
       <blockquote>
         
           
-            <p>这是文章页脚，可以放置版权说明以及打赏图片。<br>博客内容遵循 署名-非商业性使用-相同方式共享 4.0 国际 (CC BY-NC-SA 4.0) 协议</p>
+            <p>博客内容遵循 署名-非商业性使用-相同方式共享 4.0 国际 (CC BY-NC-SA 4.0) 协议</p>
 
-          
-        
-          
-            
           
         
           
@@ -622,6 +587,7 @@
   
 
 
+            
           
         </div>
         
@@ -634,7 +600,7 @@
         
           <div class="new-meta-item date" itemprop="dateUpdated" datetime="2020-03-06T09:27:20+08:00">
   <a class='notlink'>
-    <i class="fas fa-save" aria-hidden="true"></i>
+    <i class="fas fa-edit fa-fw" aria-hidden="true"></i>
     <p>更新于：2020年3月6日</p>
   </a>
 </div>
@@ -644,7 +610,7 @@
         
           
   
-  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/%E7%BD%91%E7%AB%99%E6%90%AD%E5%BB%BA/" rel="nofollow"><i class="fas fa-tag" aria-hidden="true"></i>&nbsp;<p>网站搭建</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/%E7%BD%91%E7%AB%99%E4%BC%98%E5%8C%96/" rel="nofollow"><i class="fas fa-tag" aria-hidden="true"></i>&nbsp;<p>网站优化</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/%E7%BE%8E%E5%8C%96/" rel="nofollow"><i class="fas fa-tag" aria-hidden="true"></i>&nbsp;<p>美化</p></a></div>
+  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/%E7%BD%91%E7%AB%99%E6%90%AD%E5%BB%BA/" rel="nofollow"><i class="fas fa-hashtag fa-fw" aria-hidden="true"></i><p>网站搭建</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/%E7%BD%91%E7%AB%99%E4%BC%98%E5%8C%96/" rel="nofollow"><i class="fas fa-hashtag fa-fw" aria-hidden="true"></i><p>网站优化</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/%E7%BE%8E%E5%8C%96/" rel="nofollow"><i class="fas fa-hashtag fa-fw" aria-hidden="true"></i><p>美化</p></a></div>
 
 
         
@@ -660,7 +626,7 @@
   <div class="-mob-share-list share-body">
     
       
-        <a class="-mob-share-qq" title="QQ好友" rel="external nofollow noopener noreferrer"
+        <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer"
           
           href="http://connect.qq.com/widget/shareqq/index.html?url=https://blog.darkcrane.com/posts/629b4849/&title=Hexo优化(lazyload) - DarkCrane&summary=hexo-lazyload-image（图片懒加载插件）点击这里查看
 安装1$ npm install hexo-lazyload-image --save"
@@ -673,7 +639,7 @@
       
     
       
-        <a class="-mob-share-qzone" title="QQ空间" rel="external nofollow noopener noreferrer"
+        <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer"
           
           href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://blog.darkcrane.com/posts/629b4849/&title=Hexo优化(lazyload) - DarkCrane&summary=hexo-lazyload-image（图片懒加载插件）点击这里查看
 安装1$ npm install hexo-lazyload-image --save"
@@ -686,7 +652,7 @@
       
     
       
-        <a class="-mob-share-weibo" title="微博" rel="external nofollow noopener noreferrer"
+        <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer"
           
           href="http://service.weibo.com/share/share.php?url=https://blog.darkcrane.com/posts/629b4849/&title=Hexo优化(lazyload) - DarkCrane&summary=hexo-lazyload-image（图片懒加载插件）点击这里查看
 安装1$ npm install hexo-lazyload-image --save"
@@ -713,44 +679,24 @@
         
           <div class="prev-next">
             
-              <section class="prev">
-                <span class="art-item-left">
-                  <h4>
-                    <a href="/posts/f95e7e65/" rel="prev" title="Github+jsDelivr+PicGo 打造稳定快速、高效免费图床">
-                      <i class="fas fa-chevron-left" aria-hidden="true"></i>
-                      
-                        Github+jsDelivr+PicGo 打造稳定快速、高效免费图床
-                      
-                    </a>
-                  </h4>
-                  
-                    
-                    <h6 class="tags">
-                      &nbsp;<a class="tag" href="/tags/%E7%BD%91%E7%AB%99%E6%90%AD%E5%BB%BA/"><i class="fas fa-tag" aria-hidden="true"></i> 网站搭建</a> <a class="tag" href="/tags/%E5%85%AC%E7%9B%8A/"><i class="fas fa-tag" aria-hidden="true"></i> 公益</a> <a class="tag" href="/tags/%E5%9B%BE%E5%BA%8A/"><i class="fas fa-tag" aria-hidden="true"></i> 图床</a> <a class="tag" href="/tags/%E7%BD%91%E7%AB%99%E4%BC%98%E5%8C%96/"><i class="fas fa-tag" aria-hidden="true"></i> 网站优化</a>
-                    </h6>
-                  
-                </span>
-              </section>
+              <a class='prev' href='/posts/f95e7e65/'>
+                <p class='title'><i class="fas fa-chevron-left" aria-hidden="true"></i>Github+jsDelivr+PicGo 打造稳定快速、高效免费图床</p>
+                <p class='content'>– 前言图床是个啥东西就不用过多介绍了，先来对比一下各路图床：
+
+
+微博图床：以前用的人比较多，从2019年4月开始开启了防盗链，凉凉
+SM.MS：运营四年多了，也变得越来越慢了，到了晚上直接打...</p>
+              </a>
             
             
-              <section class="next">
-                <span class="art-item-right" aria-hidden="true">
-                  <h4>
-                    <a href="/posts/32f127a5/" rel="prev" title="为自己的网站添加404公益页面">
-                      
-                        为自己的网站添加404公益页面
-                      
-                      <i class="fas fa-chevron-right" aria-hidden="true"></i>
-                    </a>
-                  </h4>
-                  
-                    
-                    <h6 class="tags">
-                      <a class="tag" href="/tags/%E7%BD%91%E7%AB%99%E6%90%AD%E5%BB%BA/"><i class="fas fa-tag" aria-hidden="true"></i> 网站搭建</a> <a class="tag" href="/tags/%E5%85%AC%E7%9B%8A/"><i class="fas fa-tag" aria-hidden="true"></i> 公益</a>&nbsp;
-                    </h6>
-                  
-                </span>
-              </section>
+              <a class='next' href='/posts/32f127a5/'>
+                <p class='title'>为自己的网站添加404公益页面<i class="fas fa-chevron-right" aria-hidden="true"></i></p>
+                <p class='content'>当访问不存在的页面时，会直接出现can’t get xxx或返回默认404页面，所以我添加了腾讯的404公益页面，也算是尽了一份力吧！
+开始折腾
+
+在网站根目录下新建404.html文件：
+12...</p>
+              </a>
             
           </div>
         
@@ -763,9 +709,10 @@
 
 
 
-  <article class="post white-box comments  ">
+  <article class="post white-box comments shadow floatable">
     <section class="article typo">
-      <h4><i class="fas fa-comments fa-fw" aria-hidden="true"></i>&nbsp;评论</h4>
+      <p ct><i class='fas fa-comments'></i> 评论</p>
+      
       
       
       
@@ -775,6 +722,7 @@
             <i class="fas fa-spinner fa-spin fa-fw"></i>
           </div>
         </section>
+      
       
     </section>
   </article>
@@ -804,7 +752,7 @@
     
     
 
-<section class="widget grid  widget-blur desktop mobile">
+<section class="widget grid shadow floatable desktop mobile">
   
   <header>
     
@@ -814,9 +762,9 @@
 
 
   <div class='content'>
-    <ul class="grid navigation">
+    <div class="grid navigation">
       
-        <li><a class="flat-box" title="/top" href="/top"
+        <a class="flat-box" title="/top" href="/top"
           
           
           id="top">
@@ -824,9 +772,9 @@
             <i class="fas fa-bullhorn fa-fw" aria-hidden="true"></i>
           
           网站公告
-        </a></li>
+        </a>
       
-        <li><a class="flat-box" title="/categories/" href="/categories/"
+        <a class="flat-box" title="/categories/" href="/categories/"
           
           
           id="categories">
@@ -834,9 +782,9 @@
             <i class="fas fa-book fa-fw" aria-hidden="true"></i>
           
           文章分类
-        </a></li>
+        </a>
       
-        <li><a class="flat-box" title="/tags/" href="/tags/"
+        <a class="flat-box" title="/tags/" href="/tags/"
           
           
           id="tags">
@@ -844,9 +792,9 @@
             <i class="fas fa-tags fa-fw" aria-hidden="true"></i>
           
           全部标签
-        </a></li>
+        </a>
       
-        <li><a class="flat-box" title="/archives/" href="/archives/"
+        <a class="flat-box" title="/archives/" href="/archives/"
           
           
           id="archives">
@@ -854,9 +802,9 @@
             <i class="fas fa-archive fa-fw" aria-hidden="true"></i>
           
           文章归档
-        </a></li>
+        </a>
       
-        <li><a class="flat-box" title="/links/" href="/links/"
+        <a class="flat-box" title="/links/" href="/links/"
           
           
           id="links">
@@ -864,9 +812,9 @@
             <i class="fas fa-user-friends fa-fw" aria-hidden="true"></i>
           
           友情链接
-        </a></li>
+        </a>
       
-        <li><a class="flat-box" title="/photo/" href="/photo/"
+        <a class="flat-box" title="/photo/" href="/photo/"
           
           
           id="photo">
@@ -874,9 +822,9 @@
             <i class="fas fa-images fa-fw" aria-hidden="true"></i>
           
           照片墙啦
-        </a></li>
+        </a>
       
-    </ul>
+    </div>
   </div>
 </section>
 
@@ -887,7 +835,7 @@
     
   
 
-  <section class="widget category  widget-blur desktop">
+  <section class="widget category shadow floatable desktop">
     
   <header>
     
@@ -941,7 +889,7 @@
     
 
 
-  <section class="widget toc-wrapper  widget-blur desktop mobile">
+  <section class="widget toc-wrapper shadow floatable desktop mobile">
     
   <header>
     
@@ -963,7 +911,7 @@
 
 
   
-  <footer class="clearfix ">
+  <footer class="clearfix">
     <br><br>
     
       
@@ -1003,16 +951,8 @@
             
           
             
-              <a href="https://tongji.baidu.com/web/10000121171/overview/index?siteId=14262775"
+              <a href="https://tongji.baidu.com/"
                 class="social fas fa-chart-area flat-btn"
-                target="_blank"
-                rel="external nofollow noopener noreferrer">
-              </a>
-            
-          
-            
-              <a href="https://music.163.com/#/user/home?id=435758240"
-                class="social fas fa-headphones-alt flat-btn"
                 target="_blank"
                 rel="external nofollow noopener noreferrer">
               </a>
@@ -1026,30 +966,22 @@
 </div>
       
     
+      
+        本站使用
+        <a href="https://volantis.js.org/" target="_blank" class="codename">Volantis</a>
+        作为主题，总访问量为
+          <span id="busuanzi_value_site_pv"><i class="fas fa-spinner fa-spin fa-fw" aria-hidden="true"></i></span>
+          次
+        
+      
+    
+      
+        <div class='copyright'>
+        <p>Copyright © 2017-2020 <a href="https://blog.darkcrane.com">Darkcrane</a> | <a href="http://beian.miit.gov.cn/" target="_blank" rel="noopener">苏ICP备19056751号-1</a></p>
 
-	    Copyright <i class="far fa-copyright"></i> 2019-2020
-	    <a href="https://blog.darkcrane.com/" target="_blank"> DarkCrane's Blog </a>丨
-	    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAAEsCAMAAABOo35HAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAC9UExURVlZWdPT07KysmRkZIWFhfT09JmZmWZmZm9vb39/fxkZGUxMTDMzM3p6epCQkKamppubm729venp6cjIyN7e3tbW1s/Pz8LCwnx8fLS0tFZWVoiIiI+Pj6GhoeTk5Glpabu7u93d3evr66CgoJSUlKqqqsnJyeDg4Hd3d8PDw+Xl5bi4uNHR0dvb26Ojo6urq+fn51hYWDg4OCgoKHBwcK2traenp0FBQe7u7vHx8U5OTre3t8zMzHV1df///7GrnpQAAAA/dFJOU///////////////////////////////////////////////////////////////////////////////////AI4mfBcAAAUGSURBVHja7NoJb6M4GMZxY0NCD64kve/pMZ2d3Z297+X7f6zFNmBAMUXa6URl/q9UJSWPUPzrizFWRUlNLgEBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYYIEFAVhggQUWWGBBABZYYIEFFlgQgAUWWGCBBRYEYIEFFlhggQUBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYn6cCIcRXgvX/h9qcIVBqDdbEM8RCxGCB9QqXYRwHYDHBgwXWl8eKZKiESHI3Ba1kWs3fKixcaJUl1YyeBm7Ocq+yLItUiVBGnXxenSHJolIKEcwHq6ikbOX1YGVzQCTN8LPmSLreghUl9sN4Uw7yajMrLC0TZ1ImzqY6FEop0+pIaEN5HaoOxVuwEqFyc4I46uSlzOLqgxlh6UaR9l3VYWl9Fdoxb1Q90KJtu41pwwFW/WHhTtW8i7TafLCqRsk6bsGw63L9qurXRmuIlbT9lDQnlXU+nBFW1Q2qnZbDprWa2tjR90LZFqx1/+Td/HpGWLlrLDvIwTcx6dQ1Vrntbig68cDms3JwbA5Y1azs1ger6sNV/bbIw1jU81MvNAGrl58RVn8ozW+btF08iGFoAlYvP3csfVur1gJBEIA1uBmue5dhZDOyO2epbmgCVi8/I6x0MMHH9pjsTfBhNzQBq5uPZoQlB0uH3DZG4EZqQ26fL3sZq5uf09Ih6qw3i/pm6BZO0qZX7rrUS68Xsbr5ZE4rePMk08pk9aUZugfqppvs6AM1Acvlo/StP+6EbW06z8hJqxbYp2BZPQUnFsLsKuhQdaHqn5ewbF7KXIn0jWO5MqOQ7RaNLPtbNMmmhimj0GUmYLl8Gs0Lq4wyPbTu1l2QKqHSouzs3OlDIslW5SQsnY/NXmFplyNvEuuLV/Tau9BzwiraDUSwXmysztYWWNtL1psXeumgIrDGaqXvBfUuvtqUYI3V2t1wk1e2msFluJJm6zDJXv/fIfjPP7DAAgsssCiwwAILLLDAosACCyywwAKLAgsssMACC6zt9fDz/v75tyOB+98PD2+ORgKffjw4OP1uJPDxl+Xy8v1I4MPF3t7VNyOB4/vF4uzdzrG+39f1kz/w66Guv/yBvw90KX/gZKkr8Qf+2dOV+gNHC12/7RxrabD2/a31bLAO/a11YbAO/K21MFhLf2s9Gqw9f2vdGqzFu11jnVusE2/gxmI9eQOnFuvYG7i0WH7uK4t15w2cWazrXWP9a7H8f/bQYvm/6IPF+sF/pVssf19Ii/WH/0K2WH/uGuvEWC39gSdj9Twy+Rqri5EZx1gt/IE7Y/XoD1wbq9vd3w1PlufnD2OBp+ebm/uxwPHF6emnscDR4vLy41jg7vHq6sNY4Pr27OyYdRaLUrDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssL6u+k+AAQCR9eHtLKvLfwAAAABJRU5ErkJggg==" data-original="https://cdn.jsdelivr.net/gh/youhua38tao/CDN/icon/icp.png" style="width:18px;height:18px;margin-bottom:-2px" alt="ICP">
-	    <a href="http://beian.miit.gov.cn/" target="_blank">苏ICP备19056751号-1</a>丨
-	
-	<span id="timeDate">载入天数...</span><span id="times">载入时分秒...</span>
-	
-	<script>
-	    var now = new Date(); 
-	    function createtime() { 
-	        var grt= new Date("8/10/2019 17:38:00");//在此处修改你的建站时间，格式：月/日/年 时:分:秒
-	        now.setTime(now.getTime()+250); 
-	        days = (now - grt ) / 1000 / 60 / 60 / 24; dnum = Math.floor(days); 
-	        hours = (now - grt ) / 1000 / 60 / 60 - (24 * dnum); hnum = Math.floor(hours); 
-	        if(String(hnum).length ==1 ){hnum = "0" + hnum;} minutes = (now - grt ) / 1000 /60 - (24 * 60 * dnum) - (60 * hnum); 
-	        mnum = Math.floor(minutes); if(String(mnum).length ==1 ){mnum = "0" + mnum;} 
-	        seconds = (now - grt ) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum); 
-	        snum = Math.round(seconds); if(String(snum).length ==1 ){snum = "0" + snum;} 
-	        document.getElementById("timeDate").innerHTML = "本站已安全运行 "+dnum+" 天 "; 
-	        document.getElementById("times").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒"; 
-	    } 
-	setInterval("createtime()",250);
-	</script>
+        </div>
+      
+    
   </footer>
 
 <script>setLoadingBarProgress(80);</script>
@@ -1060,7 +992,7 @@
     <a class="s-top fas fa-arrow-up fa-fw" href='javascript:void(0)'></a>
   </div>
   
-<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.4/dist/jquery.min.js"></script>
 
 
   <script>
@@ -1071,16 +1003,12 @@
   </script>
 
 
-  <script async src="https://cdn.jsdelivr.net/gh/xaoxuu/cdn-volantis@1.7.3/js/instant_page.js" type="module" defer integrity="sha384-OeDn4XE77tdHo8pGtE1apMPmAipjoxUQ++eeJa6EtJCfHlvijigWiJpD7VDPWXV1"></script>
-
-
-  <script async src="https://cdn.jsdelivr.net/npm/aplayer@1.10/dist/APlayer.min.js"></script>
-  <script async src="https://cdn.jsdelivr.net/npm/meting@2.0/dist/Meting.min.js"></script>
+  <script async src="https://cdn.jsdelivr.net/gh/xaoxuu/cdn-volantis@2/js/instant_page.js" type="module" defer integrity="sha384-OeDn4XE77tdHo8pGtE1apMPmAipjoxUQ++eeJa6EtJCfHlvijigWiJpD7VDPWXV1"></script>
 
 
 
   
-<script src="https://cdn.jsdelivr.net/npm/node-waves@0.7.6/dist/waves.min.js" async></script>
+<script src="https://cdn.jsdelivr.net/npm/node-waves@0.7.6/dist/waves.min.js"></script>
 
   <script type="text/javascript">
     $(function() {
@@ -1095,8 +1023,21 @@
   </script>
 
 
+  <script async src="https://cdn.jsdelivr.net/gh/xaoxuu/cdn-busuanzi@2.3/js/busuanzi.pure.mini.js"></script>
 
 
+
+
+
+  
+    
+<script src="https://cdn.jsdelivr.net/npm/aplayer@1.10/dist/APlayer.min.js"></script>
+
+  
+    
+<script src="https://cdn.jsdelivr.net/npm/meting@2.0/dist/Meting.min.js"></script>
+
+  
 
 
 
@@ -1112,28 +1053,27 @@
   
   <script>
   var GUEST_INFO = ['nick','mail','link'];
-  var guest_info = 'nick,mail,link'.split(',').filter(function(item){
+  var meta = 'nick,mail,link'.split(',').filter(function(item){
     return GUEST_INFO.indexOf(item) > -1
   });
-  var notify = 'true' == true;
-  var verify = 'true' == true;
   var valine = new Valine();
   valine.init({
     el: '#valine_container',
-    notify: notify,
-    verify: verify,
-    guest_info: guest_info,
+    meta: meta,
     
     appId: "DlqDLjttythKItyfzQDp3rXc-gzGzoHsz",
     appKey: "Km1zysOuCqrkG2qiA7Dzp1GW",
-    placeholder: "留个言呗。",
+    placeholder: "快来评论吧~",
     pageSize:'10',
     avatar:'mp',
     lang:'zh-cn',
     visitor: 'false',
-    highlight:'true'
+    highlight: 'true',
+    mathJax: 'false'
   })
   </script>
+
+
 
 
 
@@ -1143,12 +1083,15 @@
 
 
   
-<script src="/js/search.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/xaoxuu/cdn-volantis@2.4/js/search.js"></script>
 
 
 
   
-<script src="https://cdn.jsdelivr.net/gh/xaoxuu/cdn-volantis@1.7.3/js/comment_typing.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/xaoxuu/cdn-volantis@2/js/comment_typing.js"></script>
+
+
+
 
 
 
@@ -1156,85 +1099,57 @@
 
   <script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
 <script>
-  let COPY_SUCCESS = "复制成功";
-  let COPY_FAILURE = "复制失败";
-  /*页面载入完成后，创建复制按钮*/
+  function wait(callback, seconds) {
+    var timelag = null;
+    timelag = window.setTimeout(callback, seconds);
+  }
   !function (e, t, a) {
-    /* code */
     var initCopyCode = function(){
       var copyHtml = '';
       copyHtml += '<button class="btn-copy" data-clipboard-snippet="">';
-      copyHtml += '  <i class="fa fa-copy"></i><span>复制</span>';
+      copyHtml += '<i class="fas fa-copy"></i><span>COPY</span>';
       copyHtml += '</button>';
       $(".highlight .code pre").before(copyHtml);
+      $(".article pre code").before(copyHtml);
       var clipboard = new ClipboardJS('.btn-copy', {
         target: function(trigger) {
           return trigger.nextElementSibling;
         }
       });
-
       clipboard.on('success', function(e) {
-        //您可以加入成功提示
-        console.info('Action:', e.action);
-        console.info('Text:', e.text);
-        console.info('Trigger:', e.trigger);
-        success_prompt(COPY_SUCCESS);
-        e.clearSelection();
+        let $btn = $(e.trigger);
+        $btn.addClass('copied');
+        let $icon = $($btn.find('i'));
+        $icon.removeClass('fa-copy');
+        $icon.addClass('fa-check-circle');
+        let $span = $($btn.find('span'));
+        $span[0].innerText = 'COPIED';
+        
+        wait(function () { // 等待两秒钟后恢复
+          $icon.removeClass('fa-check-circle');
+          $icon.addClass('fa-copy');
+          $span[0].innerText = 'COPY';
+        }, 2000);
       });
       clipboard.on('error', function(e) {
-        //您可以加入失败提示
-        console.error('Action:', e.action);
-        console.error('Trigger:', e.trigger);
-        fail_prompt(COPY_FAILURE);
+        e.clearSelection();
+        let $btn = $(e.trigger);
+        $btn.addClass('copy-failed');
+        let $icon = $($btn.find('i'));
+        $icon.removeClass('fa-copy');
+        $icon.addClass('fa-times-circle');
+        let $span = $($btn.find('span'));
+        $span[0].innerText = 'COPY FAILED';
+        
+        wait(function () { // 等待两秒钟后恢复
+          $icon.removeClass('fa-times-circle');
+          $icon.addClass('fa-copy');
+          $span[0].innerText = 'COPY';
+        }, 2000);
       });
     }
     initCopyCode();
-
   }(window, document);
-
-  /**
-   * 弹出式提示框，默认1.5秒自动消失
-   * @param message 提示信息
-   * @param style 提示样式，有alert-success、alert-danger、alert-warning、alert-info
-   * @param time 消失时间
-   */
-  var prompt = function (message, style, time)
-  {
-      style = (style === undefined) ? 'alert-success' : style;
-      time = (time === undefined) ? 1500 : time*1000;
-      $('<div>')
-          .appendTo('body')
-          .addClass('alert ' + style)
-          .html(message)
-          .show()
-          .delay(time)
-          .fadeOut();
-  };
-
-  // 成功提示
-  var success_prompt = function(message, time)
-  {
-      prompt(message, 'alert-success', time);
-  };
-
-  // 失败提示
-  var fail_prompt = function(message, time)
-  {
-      prompt(message, 'alert-danger', time);
-  };
-
-  // 提醒
-  var warning_prompt = function(message, time)
-  {
-      prompt(message, 'alert-warning', time);
-  };
-
-  // 信息提示
-  var info_prompt = function(message, time)
-  {
-      prompt(message, 'alert-info', time);
-  };
-
 </script>
 
 
@@ -1245,7 +1160,7 @@
   <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 <script>
   let LAZY_LOAD_IMAGE = "[object Object]";
-  $(".article-entry").find("fancybox").find("img").each(function () {
+  $(".article-entry").find("div.fancybox").find("img").each(function () {
       var element = document.createElement("a");
       $(element).attr("data-fancybox", "gallery");
       $(element).attr("href", $(this).attr("src"));
@@ -1267,10 +1182,13 @@
 
 
   <script>setLoadingBarProgress(100);</script>
-  <!--单击显示文字-->
-  <script type="text/javascript" src="/js/click_show_text.js"></script>
   <!--浏览器搞笑标题-->
   <script type="text/javascript" src="/js/FunnyTitle.js"></script>
+  <!--点击烟花爆炸效果-->
+  <canvas class="fireworks" style="position: fixed;left: 0;top: 0;z-index: 1; pointer-events: none;" ></canvas> 
+  <script type="text/javascript" src="//cdn.bootcss.com/animejs/2.2.0/anime.min.js"></script> 
+  <script type="text/javascript" src="/js/fireworks.js"></script>
+  
   <!-- 数字雨 -->
   <canvas id="canvas" width="1440" height="900" ></canvas>
   <script type="text/javascript" src="/js/DigitalRain.js"></script>
